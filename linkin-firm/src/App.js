@@ -12,11 +12,17 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/clients" component={Clients} />
-        <Route path="/companies" component={Companies} />
-        <Route path="/about-us" component={AboutUs} />
-        <Route path="/our-business" component={OurBusiness} />
-        <Route path="/contact" component={Contact} />
+        <Route exact path="/en" component={Home} />
+        <Route path="/clientes" component={Clients} />
+        <Route path="/en/clients" component={Clients} />
+        <Route path="/empresas" component={Companies} />
+        <Route path="/en/companies" component={Companies} />
+        <Route path="/sobre-nos" component={AboutUs} />
+        <Route path="/en/about-us" component={AboutUs} />
+        <Route path="/nosso-negocio" component={OurBusiness} />
+        <Route path="/en/our-business" component={OurBusiness} />
+        <Route path="/contato" component={Contact} />
+        <Route path="/en/contact" component={Contact} />
       </Switch>
     </BrowserRouter>
   );
