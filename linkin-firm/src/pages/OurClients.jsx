@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 
-function Clients() {
+function OurClients() {
   return <div><Header /></div>;
 }
 
-export default Clients;
+export default OurClients;
