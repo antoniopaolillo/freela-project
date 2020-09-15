@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import location from '../images/svg/location.svg';
 import mail from '../images/svg/mail.svg';
 import phone from '../images/svg/phone.svg';
-import '../styles/contact.css'
+import '../styles/contact.css';
 
 const portugueseTexts = {
   title: 'Lorem ipsum dolor sit amet',
@@ -12,7 +12,7 @@ const portugueseTexts = {
   yourPhone: 'Seu telefone',
   email: 'Endereço de email',
   message: 'Mensagem',
-  sendMessage: 'Enviar mensagem',
+  sendMessage: 'ENVIAR MENSAGEM',
 };
 
 const englishTexts = {
@@ -22,7 +22,7 @@ const englishTexts = {
   yourPhone: 'Your phone',
   email: 'Email address',
   message: 'Message',
-  sendMessage: 'Send Message',
+  sendMessage: 'SEND MESSAGE',
 };
 
 function descriptions(title, subtitle) {
@@ -43,11 +43,11 @@ function contactDetails() {
         <p className="details-number">+1 999 999 999</p>
       </div>
       <div className="icon-info-container">
-        <img src={mail} className="details-icon" alt="mail-icon"/>
+        <img src={mail} className="details-icon" alt="mail-icon" />
         <p className="details-email">info@linkinfirm.com</p>
       </div>
       <div className="icon-info-container">
-        <img src={location} className="details-icon" alt="location-icon"/>
+        <img src={location} className="details-icon" alt="location-icon" />
         <p className="details-address">
           851 NE 1st Ave - # 1108 Miami, Florida 33132 - USA
         </p>
@@ -58,28 +58,52 @@ function contactDetails() {
 
 function textFields(yourName, yourPhone, email, message) {
   return (
-    <div>
-      <label>{yourName}</label>
-      <input type="text" />
-      <label>{yourPhone}</label>
-      <input type="text" />
-      <label>{email}</label>
-      <input type="text" />
-      <label>{message}</label>
-      <input type="text" />
+    <div className="email-fields-container">
+      <div className="email-fields-rules name-field">
+        <label for="name">{yourName}</label>
+        <input
+          id="name"
+          type="text"
+          className="input-email-phone-name-fields"
+        />
+      </div>
+      <div className="email-fields-rules phone-field">
+        <label for="phone">{yourPhone}</label>
+        <input
+          id="phone"
+          type="text"
+          className="input-email-phone-name-fields"
+        />
+      </div>
+      <div className="email-fields-rules email-field">
+        <label for="email">{email}</label>
+        <input
+          id="email"
+          type="text"
+          className="input-email-phone-name-fields"
+        />
+      </div>
+      <div className="email-fields-rules message-field">
+        <label for="message">{message}</label>
+        <input id="message" type="text" />
+      </div>
     </div>
   );
 }
 
 function buttonMessage(text) {
-  return <button>{text}</button>;
+  return <button className="btn-send-msg">{text}</button>;
 }
 
 function emailContainer({ yourName, yourPhone, email, message, sendMessage }) {
   return (
     <div className="email-container">
-      {textFields(yourName, yourPhone, email, message)}
-      {buttonMessage(sendMessage)}
+      <form className="email-box">
+        {textFields(yourName, yourPhone, email, message)}
+        <div className="btn-send-msg-container">
+          {buttonMessage(sendMessage)}
+        </div>
+      </form>
     </div>
   );
 }

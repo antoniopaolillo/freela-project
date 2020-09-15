@@ -1,9 +1,10 @@
 .contact-container {
   background-color: #222B3E;
   width: auto;
-  height: 88vh;
+  height: 100%;
   margin: 0;
   color: white;
+  padding-bottom: 5vh;
 }
 
 .contact-body{
@@ -22,6 +23,9 @@
 
 .email-container {
   width: 50%;
+  background-color: #2F3556;
+  border-radius: 40px;
+  height: max-content;
 }
 
 .title {
@@ -60,4 +64,83 @@
 
 .details-email .details-address {
   font-size: 18px;
+}
+
+.email-box {
+  margin: 24px 26px 38px 26px;
+  background: #EEEDED;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  color: black;
+}
+
+.email-fields-container {
+  padding: 54px 39px 106px 39px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.email-fields-rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.email-fields-rules input {
+  margin-top: 8px;
+}
+
+.name-field {
+  margin-right: 39px;
+  width: 35vh;
+}
+
+.phone-field {
+  width: 35vh;
+}
+
+.email-field {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.input-email-phone-name-fields {
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #BABABA;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.message-field {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.message-field input {
+  height: 21vh;
+  background: #FFFFFF;
+  border: 1px solid #BABABA;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.btn-send-msg-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 38px;
+}
+
+.btn-send-msg {
+  width: 197px;
+  height: 45px;
+  background: #2F3556;
+  border-radius: 38px;
+  font-size: 13px;
+  color: white;
+  border-style: none;
+  letter-spacing: 0.2em;
 }
