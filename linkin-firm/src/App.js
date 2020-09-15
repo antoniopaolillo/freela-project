@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
-import Athletes from './pages/athletes';
+import Athletes from './pages/Athletes';
 import Home from './pages/Home';
 import OurInvestiments from './pages/OurInvestments';
 import OurBusiness from './pages/OurBusiness';
