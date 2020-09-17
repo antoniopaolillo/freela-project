@@ -13,6 +13,7 @@ const portugueseTexts = {
   email: 'Endereço de email',
   message: 'Mensagem',
   sendMessage: 'ENVIAR MENSAGEM',
+  invalidData: 'Dados inválidos!'
 };
 
 const englishTexts = {
@@ -23,6 +24,7 @@ const englishTexts = {
   email: 'Email address',
   message: 'Message',
   sendMessage: 'SEND MESSAGE',
+  invalidData: 'Invalid Data!'
 };
 
 function descriptions(title, subtitle) {
@@ -60,7 +62,7 @@ function textFields(yourName, yourPhone, email, message) {
   return (
     <div className="email-fields-container">
       <div className="email-fields-rules name-field">
-        <label for="name">{yourName}</label>
+        <label htmlFor="name">{yourName}</label>
         <input
           id="name"
           type="text"
@@ -68,7 +70,7 @@ function textFields(yourName, yourPhone, email, message) {
         />
       </div>
       <div className="email-fields-rules phone-field">
-        <label for="phone">{yourPhone}</label>
+        <label htmlFor="phone">{yourPhone}</label>
         <input
           id="phone"
           type="text"
@@ -76,7 +78,7 @@ function textFields(yourName, yourPhone, email, message) {
         />
       </div>
       <div className="email-fields-rules email-field">
-        <label for="email">{email}</label>
+        <label htmlFor="email">{email}</label>
         <input
           id="email"
           type="text"
@@ -84,7 +86,7 @@ function textFields(yourName, yourPhone, email, message) {
         />
       </div>
       <div className="email-fields-rules message-field">
-        <label for="message">{message}</label>
+        <label htmlFor="message">{message}</label>
         <input id="message" type="text" />
       </div>
     </div>
@@ -95,10 +97,33 @@ function buttonMessage(text) {
   return <button className="btn-send-msg">{text}</button>;
 }
 
-function emailContainer({ yourName, yourPhone, email, message, sendMessage }) {
+async function sendEmail(event, invalidData) {
+  event.preventDefault();
+  const { target } = event;
+  const objToSend = {
+    userName: target[0],
+    userPhone: target[1],
+    userEmail: target[2],
+    message: target[3],
+  };
+  const result = await fetch(`http://url-will-be-here`, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(objToSend),
+  }).then(res => res.json());
+  if (result.message) {
+    return alert(invalidData)
+  }
+  return alert('Email Send!');
+}
+
+function emailContainer({ yourName, yourPhone, email, message, sendMessage,invalidData }) {
   return (
     <div className="email-container">
-      <form className="email-box">
+      <form className="email-box" onSubmit={e => sendEmail(e, invalidData)}>
         {textFields(yourName, yourPhone, email, message)}
         <div className="btn-send-msg-container">
           {buttonMessage(sendMessage)}
