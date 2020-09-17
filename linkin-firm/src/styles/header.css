@@ -1,0 +1,54 @@
+
+.logo {
+  width: 160px;
+  height: 56px;
+  margin-left: 56px;
+}
+
+.header-container {
+  background-color: #222B3E;
+  width: 100%;
+  height: 121px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-container {
+  margin-right: 43px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link {
+  margin-left: 19px;
+  margin-right: 19px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.btn-language {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100px;
+  height: 28px;
+  border-radius: 100px;
+  background-color: #2F3556;
+	margin-left: 11px;
+	cursor: pointer;
+}
+
+.btn-language p {
+  color: white;
+  font-size: 10px;
+}
+
+.btn-flag {
+  width: 17px;
+  height: 17px;
+}
