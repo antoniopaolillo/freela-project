@@ -17,7 +17,7 @@ function App() {
         <Route path="/atletas" component={Athletes} />
         <Route path="/en/athletes" component={Athletes} />
         <Route path="/nossos-investimentos" component={OurInvestiments} />
-        <Route path="/en/our-investiments" component={OurInvestiments} />
+        <Route path="/en/our-investments" component={OurInvestiments} />
         <Route path="/sobre-nos" component={AboutUs} />
         <Route path="/en/about-us" component={AboutUs} />
         <Route path="/nosso-negocio" component={OurBusiness} />

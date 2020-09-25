@@ -1,0 +1,49 @@
+.our-investments-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.our-investments-apresentation-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #222B3E;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  color: white;
+  bottom: 0;
+  border-radius: 0px 0px 40px 40px;
+}
+
+.our-investments-texts-side {
+  width: 50%;
+  margin-left: 53px;
+}
+
+.our-investments-img-side {
+  width: 50%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.our-investments-img-side img {
+  max-width: 100%;
+  right: 0;
+}
+
+.our-investments-texts-title {
+  font-size: 70.6294px;
+  line-height: 88px;
+  width: 464.74px;
+  height: 177.99px;
+  border-bottom: 11.3007px solid #FFFFFF;
+  font-weight: bold;
+}
+
+.our-investments-texts-subtitle {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: bold;
+  width: 459px;
+}
