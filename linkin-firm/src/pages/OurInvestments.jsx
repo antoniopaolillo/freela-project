@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import IMG from '../images/png/our-investments-img.png';
 import '../styles/ourInvestments.css';
 import CardImg from '../images/svg/card_img.svg';
+// import IMG3 from '../images/svg/test_2.svg';
+
 
 const englishText = {
   title: 'Lorem ipsum consectetur.',
@@ -66,7 +68,7 @@ function apresentationSide(title, subtitle) {
 }
 
 function companiesCards() {
-  return arr.map(element => (
+  return arr.map(() => (
     <div className="our-investments-companies-card">
       <img src={CardImg} alt="companie logo" />
       <div className="companie-card-texts">

@@ -53,7 +53,8 @@
   flex-direction: column;
   margin-left: 80px;
   margin-top: 40px;
-  margin-right: 117px;
+  margin-right: 91px;
+  margin-bottom: 150px;
 }
 
 .our-investments-companies-side-title {
@@ -73,6 +74,7 @@
   background: #2F3556;
   border-radius: 5px;
   margin-bottom: 39px;
+  margin-right: 26px;
 }
 
 .companie-card-texts {
@@ -103,5 +105,5 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
