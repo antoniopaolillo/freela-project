@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import IMG from '../images/png/our-investments-img.png';
 import '../styles/ourInvestments.css';
+import CardImg from '../images/svg/card_img.svg';
 
 const englishText = {
   title: 'Lorem ipsum consectetur.',
@@ -14,6 +15,29 @@ const portugueseText = {
   subtitle: 'Nam ac arcu dignissim, posuere mi id,',
   h1Name: 'Nossas empresas',
 };
+
+const arr = [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  29,
+];
 
 function textsContainer(title, subtitle) {
   return (
@@ -40,11 +64,24 @@ function apresentationSide(title, subtitle) {
     </div>
   );
 }
+
+function companiesCards() {
+  return arr.map(element => (
+    <div className="our-investments-companies-card">
+      <img src={CardImg} alt="companie logo" />
+      <div className="companie-card-texts">
+        <p className="companie-card-title">Lorem ipsum</p>
+        <p className="companie-card-subtitle">Lorem ipsum tema for gertmun</p>
+      </div>
+    </div>
+  ));
+}
+
 function companiesSide(name) {
   return (
-    <div>
-      <p>{name}</p>
-      <div>companies here</div>
+    <div className="our-investments-companies-side">
+      <p className="our-investments-companies-side-title">{name}</p>
+      <div className="companies-cards-container">{companiesCards()}</div>
     </div>
   );
 }
