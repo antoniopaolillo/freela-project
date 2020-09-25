@@ -36,7 +36,7 @@ function cardsInfo() {
       {arrayOfImages.map((arr, index) => (
         <div key={arr[1] + index}>
           <p>{arr[1]}</p>
-          <img src={arr[0]} alt={arr[1]}/>
+          <img src={arr[0]} alt={arr[1]} className="scale-down-center scale-up-center"/>
         </div>
       ))}
     </div>
