@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import location from '../images/svg/location.svg';
 import mail from '../images/svg/mail.svg';
 import phone from '../images/svg/phone.svg';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 import '../styles/contact.css';
 
 const portugueseTexts = {
@@ -80,15 +82,11 @@ function textFields(yourName, yourPhone, email, message) {
       </div>
       <div className="email-fields-rules email-field">
         <label htmlFor="email">{email}</label>
-        <input
-          id="email"
-          type="text"
-          className="input-email-phone-name-fields"
-        />
+      <PhoneInput country={'br'} />
       </div>
       <div className="email-fields-rules message-field">
         <label htmlFor="message">{message}</label>
-        <input id="message" type="text" />
+        <textarea id="message" type="text" />
       </div>
     </div>
   );
