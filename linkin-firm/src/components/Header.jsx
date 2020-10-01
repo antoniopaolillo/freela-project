@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from '../context/context';
 import { Link } from 'react-router-dom';
 import Logo from '../images/svg/logo.svg';
 import BrazilFlag from '../images/svg/brazil-flag.svg';
@@ -24,10 +25,14 @@ const englishArray = [
 
 function languageButton(icon, text) {
   return (
-    <div className="btn-language">
-      <img src={icon} alt={'flag'} className="btn-flag" />
-      <p>{text}</p>
-      <img src={Siwpper} alt="siwpper" className="btn-siwpper" />
+    <div>
+      <div className="btn-language scale-up-ver-top">
+        <div className="btn-active">
+        <img src={icon} alt={'flag'} className="btn-flag" />
+        <p>{text}</p>
+        <img src={Siwpper} alt="siwpper" className="btn-siwpper" />
+        </div>
+      </div>
     </div>
   );
 }
@@ -52,6 +57,7 @@ function Header() {
     location: { pathname },
   } = window;
   const namePages = pathname.includes('/en') ? englishArray : portugueseArray;
+  const { addClass, setAddClass } = useContext(Context);
 
   return (
     <header>
@@ -59,7 +65,7 @@ function Header() {
         <img src={Logo} alt="logo" className="logo" />
         <div className="links-container">
           {namePages.map(link => buttonPages(link))}
-          {languageButtonsGenerator(namePages)}
+          {languageButtonsGenerator(namePages, setAddClass, addClass)}
         </div>
       </div>
     </header>
