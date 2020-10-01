@@ -1,0 +1,10 @@
+.about-us-page-container {
+  background-color: #222B3E;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+}
