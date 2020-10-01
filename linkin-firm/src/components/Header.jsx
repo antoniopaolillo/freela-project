@@ -23,7 +23,7 @@ const englishArray = [
   { name: 'contact', route: '/contact' },
 ];
 
-function languageButton(icon, text) {
+function languageButton(icon, text, setAddClass, addClass) {
   return (
     <div>
       <div className="btn-language scale-up-ver-top">
@@ -37,11 +37,11 @@ function languageButton(icon, text) {
   );
 }
 
-function languageButtonsGenerator(currentLanguage) {
+function languageButtonsGenerator(currentLanguage, setAddClass, addClass) {
   if (currentLanguage[0].name === 'sobre nós') {
-    return languageButton(BrazilFlag, 'Português');
+    return languageButton(BrazilFlag, 'Português', setAddClass, addClass);
   }
-  return languageButton(USAFlag, 'English');
+  return languageButton(USAFlag, 'English', setAddClass, addClass);
 }
 
 function buttonPages({ name, route }) {
