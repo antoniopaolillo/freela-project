@@ -1,47 +1,62 @@
 .contact-container {
   background-color: #222B3E;
   width: auto;
-  height: 100%;
+  height: 85vh;
   margin: 0;
   color: white;
-  padding-bottom: 5vh;
+  padding-bottom: 6vh;
+  /* align-items: center; */
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact-body{
   display: flex;
   flex-direction: row;
-  width: auto;
-  margin-left: 8%;
-  padding-top: 95px;
+  /* justify-content: center; */
+  width: 1286px;
+  margin-left: 64px;
+  padding-top: 55px;
+  margin-right: 90px;
 }
 
 .description-and-details-container {
-  width: 28%;
-  margin-right: 192px;
+  width: 50%;
+}
+
+.email-side-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .email-container {
-  width: 50%;
+  width: 630px;
+  height: 662px;
   background-color: #2F3556;
   border-radius: 40px;
-  height: max-content;
+  margin-right: 0;
+  align-items: right;
 }
 
 .title {
+  width: 470px;
   font-size: 70px;
+  font-weight: bold;
   margin: 0;
-}
-
-.title-border-bottom {
-  width: 90%;
-  margin-top: 3em;
-  margin-bottom: 4em;
+  line-height: 88px;
   border-bottom: 11px solid white;
 }
+
 .subtitle {
+  width: 409.65px;
   font-size: 39px;
+  font-weight: bold;
+  line-height: 49px;
   margin: 0;
-  margin-bottom: 3.17em;
+  margin-top: 59px;
+  margin-bottom: 80px;
 }
 
 .icon-info-container {
@@ -53,19 +68,24 @@
   margin-right: 2em;
 }
 
-.icon-info-container p {
-  width: 50%;
-}
-
 .details-number {
   font-size: 24px;
+  line-height: 30px;
 }
 
 .details-email .details-address {
   font-size: 18px;
+  line-height: 22px;
+}
+
+.details-address {
+  letter-spacing: 0.08em;
+  width: 269px;
 }
 
 .email-box {
+  width: 578px;
+  height: 600px;
   margin: 24px 26px 38px 26px;
   background: #EEEDED;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
@@ -74,10 +94,10 @@
 }
 
 .email-fields-container {
-  padding: 54px 39px 106px 39px;
+  padding: 54px 39px 0px 39px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: no-wrap;
 }
 
 .email-fields-rules {
@@ -92,12 +112,11 @@
 }
 
 .name-field {
-  margin-right: 39px;
-  width: 35vh;
+  width: 48%;
 }
 
 .phone-field {
-  width: 35vh;
+  width: 48%;
 }
 
 .email-field {
@@ -105,8 +124,17 @@
   margin-top: 28px;
 }
 
+.email-fields-phone-name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .input-email-phone-name-fields {
   height: 50px;
+  width: auto;
   background: #FFFFFF;
   border: 1px solid #BABABA;
   box-sizing: border-box;
@@ -125,12 +153,14 @@
   box-sizing: border-box;
   border-radius: 5px;
 }
+
 .btn-send-msg-container {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 38px;
+  margin-bottom: 38px;
+  margin-top: 62px;
 }
 
 .btn-send-msg {

@@ -13,7 +13,7 @@ const portugueseTexts = {
   email: 'Endereço de email',
   message: 'Mensagem',
   sendMessage: 'ENVIAR MENSAGEM',
-  invalidData: 'Dados inválidos!'
+  invalidData: 'Dados inválidos!',
 };
 
 const englishTexts = {
@@ -24,14 +24,13 @@ const englishTexts = {
   email: 'Email address',
   message: 'Message',
   sendMessage: 'SEND MESSAGE',
-  invalidData: 'Invalid Data!'
+  invalidData: 'Invalid Data!',
 };
 
 function descriptions(title, subtitle) {
   return (
     <div>
       <p className="title">{title}</p>
-      <p className="title-border-bottom" />
       <p className="subtitle">{subtitle}</p>
     </div>
   );
@@ -61,21 +60,23 @@ function contactDetails() {
 function textFields(yourName, yourPhone, email, message) {
   return (
     <div className="email-fields-container">
-      <div className="email-fields-rules name-field">
-        <label htmlFor="name">{yourName}</label>
-        <input
-          id="name"
-          type="text"
-          className="input-email-phone-name-fields"
-        />
-      </div>
-      <div className="email-fields-rules phone-field">
-        <label htmlFor="phone">{yourPhone}</label>
-        <input
-          id="phone"
-          type="text"
-          className="input-email-phone-name-fields"
-        />
+      <div className="email-fields-phone-name-container">
+        <div className="email-fields-rules name-field">
+          <label htmlFor="name">{yourName}</label>
+          <input
+            id="name"
+            type="text"
+            className="input-email-phone-name-fields"
+          />
+        </div>
+        <div className="email-fields-rules phone-field">
+          <label htmlFor="phone">{yourPhone}</label>
+          <input
+            id="phone"
+            type="text"
+            className="input-email-phone-name-fields"
+          />
+        </div>
       </div>
       <div className="email-fields-rules email-field">
         <label htmlFor="email">{email}</label>
@@ -115,20 +116,29 @@ async function sendEmail(event, invalidData) {
     body: JSON.stringify(objToSend),
   }).then(res => res.json());
   if (result.message) {
-    return alert(invalidData)
+    return alert(invalidData);
   }
   return alert('Email Send!');
 }
 
-function emailContainer({ yourName, yourPhone, email, message, sendMessage,invalidData }) {
+function emailContainer({
+  yourName,
+  yourPhone,
+  email,
+  message,
+  sendMessage,
+  invalidData,
+}) {
   return (
-    <div className="email-container">
-      <form className="email-box" onSubmit={e => sendEmail(e, invalidData)}>
-        {textFields(yourName, yourPhone, email, message)}
-        <div className="btn-send-msg-container">
-          {buttonMessage(sendMessage)}
-        </div>
-      </form>
+    <div className="email-side-container">
+      <div className="email-container">
+        <form className="email-box" onSubmit={e => sendEmail(e, invalidData)}>
+          {textFields(yourName, yourPhone, email, message)}
+          <div className="btn-send-msg-container">
+            {buttonMessage(sendMessage)}
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
