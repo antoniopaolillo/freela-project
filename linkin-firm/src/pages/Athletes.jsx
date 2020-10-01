@@ -24,7 +24,7 @@ function athletesCardsContainer() {
 function atlhetesSide(roleName) {
   return (
     <div>
-      <p>{roleName}</p>
+      <p className="athlete-page-ath-title">{roleName}</p>
       {athletesCardsContainer()}
     </div>
   );
@@ -32,14 +32,14 @@ function atlhetesSide(roleName) {
 
 function informationsSide(title, subtitle) {
   return (
-    <div>
-      <div>
-        <img src={IMG1} alt="example" />
-      </div>
-      <div>
-        <p>{title}</p>
-        <p>{subtitle}</p>
+    <div className="athlete-page-information-side">
+      <div className="athlete-page-inf-img1-container">
         <img src={IMG2} alt="example" />
+      </div>
+      <div className="athlete-page-inf-right">
+        <p className="athlete-page-title">{title}</p>
+        <p className="athlete-page-subtitle">{subtitle}</p>
+        <img src={IMG1} alt="example" />
       </div>
     </div>
   );
@@ -47,7 +47,7 @@ function informationsSide(title, subtitle) {
 
 function atlhetesContainer({ title, subtitle, roleName }) {
   return (
-    <div className="">
+    <div className="athlete-page-container">
       {informationsSide(title, subtitle)}
       {atlhetesSide(roleName)}
     </div>
