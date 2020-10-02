@@ -50,12 +50,7 @@
   margin-left: 110px;
 }
 
-/* .athlete-card-box-container {
-  /* width: 370px; */
-  /* height: 245.44px; */
-  /* display: flex; */
-  /* justify-content: center; */
-/* } */
+
 .athlete-card-box {
   display: flex;
   flex-direction: row;
@@ -106,21 +101,41 @@
   position: absolute;
 }
 
+.athlete-card-box-container {
+  display: flex;
+  justify-content: center;
+}
+
 .athlete-card-box-container-outside {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 360px;
 }
 
 .slick-dots {
   background-color: #222B3E;
 }
 
+.slick-dots li {
+  margin: 0 50px;
+}
+
+
 .slick-dots li.slick-active button:before {
-  color: white;
-  /* opacity: 100; */
+  color: #C4C4C4;;
+  opacity: 100;
+  border-bottom: solid 10px #C4C4C4;
+  width: 90px;
 }
 
 .slick-dots li button:before {
   color: white;
-  /* opacity: 25; */
+  content: '_';
+  border-bottom: solid 3px #C4C4C4;
+  width: 90px;
+  font-size: 20px;
+}
+
+.slick-slider .slick-initialized {
+  background: linear-gradient(270deg, rgba(34, 43, 62, 0) 0%, #222B3E 100%);
 }

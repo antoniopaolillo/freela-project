@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import CARDIMG from '../images/svg/athlete_card_img.svg';
+import DOTCARD from '../images/svg/dot_card.svg';
 
 const arr = [
   1,
@@ -30,19 +31,21 @@ const arr = [
 class SimpleSlider extends React.Component {
   cards() {
     return (
-      <div className="athlete-card-box-container ">
-        <div className="athlete-card-box">
-          <div className="athlete-card-box-infos">
-            <p className="athlete-card-box-infos-title">Lorem ipsum</p>
-            <p className="athlete-card-box-infos-subtitle">
-              Lorem ipsum tema for gertmun
-            </p>
-            <p className="athlete-card-box-infos-inf">
-              Lorem ipsum tema for getmun
-            </p>
-          </div>
-          <div className="athlete-card-box-img">
-            <img src={CARDIMG} alt="white pict" />
+      <div>
+        <div className="athlete-card-box-container">
+          <div className="athlete-card-box">
+            <div className="athlete-card-box-infos">
+              <p className="athlete-card-box-infos-title">Lorem ipsum</p>
+              <p className="athlete-card-box-infos-subtitle">
+                Lorem ipsum tema for gertmun
+              </p>
+              <p className="athlete-card-box-infos-inf">
+                Lorem ipsum tema for getmun
+              </p>
+            </div>
+            <div className="athlete-card-box-img">
+              <img src={CARDIMG} alt="white pict" />
+            </div>
           </div>
         </div>
       </div>
@@ -52,14 +55,10 @@ class SimpleSlider extends React.Component {
   render() {
     var settings = {
       dots: true,
-      // centerMode: true,
-      infinite: true,
       speed: 500,
-      // centerPadding: '150px',
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 4,
-      // slidesPerRow: 10,
-      // initialSlide: 10,
+      initialSlide: 10,
       responsive: [
         {
           breakpoint: 1300,
