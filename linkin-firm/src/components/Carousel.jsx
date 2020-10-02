@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import CARDIMG from '../images/svg/athlete_card_img.svg';
-import DOTCARD from '../images/svg/dot_card.svg';
 
 const arr = [
   1,
