@@ -50,6 +50,12 @@
   margin-left: 110px;
 }
 
+/* .athlete-card-box-container {
+  /* width: 370px; */
+  /* height: 245.44px; */
+  /* display: flex; */
+  /* justify-content: center; */
+/* } */
 .athlete-card-box {
   display: flex;
   flex-direction: row;
@@ -57,6 +63,7 @@
   width: 313px;
   height: 226.44px;
   position: relative;
+  margin: 0;
 }
 
 .athlete-card-box-infos {
@@ -97,4 +104,23 @@
   left: 121px;
   top: 34px;
   position: absolute;
+}
+
+.athlete-card-box-container-outside {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.slick-dots {
+  background-color: #222B3E;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+  /* opacity: 100; */
+}
+
+.slick-dots li button:before {
+  color: white;
+  /* opacity: 25; */
 }

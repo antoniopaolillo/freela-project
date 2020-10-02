@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import IMG1 from '../images/svg/img_1_athletes.svg';
 import IMG2 from '../images/svg/img_2_athletes.svg';
-import CARDIMG from '../images/svg/athlete_card_img.svg';
+import SimpleSlider from '../components/Carousel';
 import '../styles/athletes.css';
 
 const englishTexts = {
@@ -18,34 +18,13 @@ const portugueseTexts = {
   roleName: 'Nossos atletas',
 };
 
-function cards() {
-  return (
-    <div className="athlete-card-box">
-      <div className="athlete-card-box-infos">
-        <p className="athlete-card-box-infos-title">Lorem ipsum</p>
-        <p className="athlete-card-box-infos-subtitle">
-          Lorem ipsum tema for gertmun
-        </p>
-        <p className="athlete-card-box-infos-inf">
-          Lorem ipsum tema for getmun
-        </p>
-      </div>
-      <div className="athlete-card-box-img">
-        <img src={CARDIMG} alt="white pict" />
-      </div>
-    </div>
-  );
-}
-
-function athletesCardsContainer() {
-  return <div>{cards()}</div>;
-}
-
 function atlhetesSide(roleName) {
   return (
     <div>
       <p className="athlete-page-ath-title">{roleName}</p>
-      {athletesCardsContainer()}
+      <div className="athlete-card-box-container-outside">
+        <SimpleSlider />
+      </div>
     </div>
   );
 }
