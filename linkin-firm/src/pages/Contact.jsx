@@ -82,7 +82,7 @@ function textFields(yourName, yourPhone, email, message) {
       </div>
       <div className="email-fields-rules email-field">
         <label htmlFor="email">{email}</label>
-      <PhoneInput country={'br'} />
+        <PhoneInput country={'br'} />
       </div>
       <div className="email-fields-rules message-field">
         <label htmlFor="message">{message}</label>

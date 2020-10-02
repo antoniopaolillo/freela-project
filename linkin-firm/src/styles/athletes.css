@@ -49,3 +49,52 @@
   line-height: 125px;
   margin-left: 110px;
 }
+
+.athlete-card-box {
+  display: flex;
+  flex-direction: row;
+  background-color: #2F3556;
+  width: 313px;
+  height: 226.44px;
+  position: relative;
+}
+
+.athlete-card-box-infos {
+  margin-left: 20px;
+}
+
+.athlete-card-box-infos-title {
+  width: 121px;
+  background: #FFFAFA;
+  color:#222B3E;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 28px;
+}
+
+.athlete-card-box-infos-subtitle {
+  width: 122px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+
+.athlete-card-box-infos-inf {
+  width: 122px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 20px;
+}
+
+.athlete-card-box-img {
+  display: flex;
+  align-items: flex-end;
+  left: 121px;
+  top: 34px;
+  position: absolute;
+}
