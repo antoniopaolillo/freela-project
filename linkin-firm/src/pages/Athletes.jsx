@@ -59,7 +59,7 @@ function Athletes() {
   } = window;
   const namePages = pathname.includes('/en') ? englishTexts : portugueseTexts;
   return (
-    <div>
+    <div className="athletes-container-outside-mob">
       <Header />
       {atlhetesContainer(namePages)}
     </div>
