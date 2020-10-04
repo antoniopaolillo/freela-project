@@ -130,6 +130,7 @@
     margin: 0 auto;
     margin-top: 38px;
   }
+
   .about-us-cards-container-info {
     width: 258px;
     flex-wrap: wrap;
@@ -137,6 +138,7 @@
     justify-content: space-between;
     margin-bottom: 56px;
   }
+
   .about-us-cards-container-info div {
     margin-right: 0px;
   }
