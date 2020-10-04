@@ -146,3 +146,112 @@
   color: #FFFFFF;
   width: 765px;
 }
+
+@media only screen and (max-width: 599px) {
+  .home-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    padding-top: 48px;
+    padding-bottom: 63px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .home-info-img-container {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .home-info-img-container img {
+   width: 259px; 
+  }
+
+  .home-info-texts-container {
+    margin: 0 auto;
+  }
+
+  .home-info-texts-box  {
+    width: 208.68px;
+    height: 288px;
+    margin: 0 auto;
+  }
+
+  .home-info-texts-title {
+    font-size: 40.678px;
+    line-height: 51px;
+    text-align: center;
+    width: 275.25px;
+    margin-right: 60px;
+  }
+
+  .home-info-texts-subtitle {
+    width: 170.44px;
+    font-size: 11.3898px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .home-footer-links-container {
+    display: none;
+  }
+
+  .home-footer-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 360px;
+    height: auto;
+    padding-top: 37px;
+  }
+
+  .home-footer-left-side {
+    margin: 0 auto;
+  }
+
+  .home-footer-logo {
+    margin: 0 auto;
+    width: 180px;
+    margin-bottom: 63px;
+  }
+
+  .home-footer-right-side {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .home-footer-title {
+    width: 258.32px;
+    font-size: 38.4075px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+
+  .home-footer-subtitle {
+    width: 287px;
+    font-size: 19.2038px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+
+  .home-footer-description {
+    width: 291px;
+    font-weight: 500;
+    font-size: 9.60188px;
+    line-height: 12px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 160px;
+  }
+
+  .home-footer-contacts {
+    /* o tamanho abaixo terá que ser ajustado após alterar o componente de lugar */
+    top: 1510px;
+    position: absolute;
+  }
+}
