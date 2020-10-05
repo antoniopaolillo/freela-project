@@ -1,7 +1,9 @@
 .contact-container {
   background-color: #222B3E;
   width: auto;
-  height: 85vh;
+  /* height: 90vh; */
+  min-height: 83vh;
+  height: auto;
   margin: 0;
   color: white;
   padding-bottom: 6vh;
@@ -24,6 +26,7 @@
 
 .email-side-container {
   width: 50%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
