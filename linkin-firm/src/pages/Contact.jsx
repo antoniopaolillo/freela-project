@@ -40,7 +40,7 @@ function descriptions(title, subtitle) {
 
 function contactDetails() {
   return (
-    <div>
+    <div className="contact-details-mob">
       <div className="icon-info-container">
         <img src={phone} className="details-icon" alt="phone-icon" />
         <p className="details-number">+1 999 999 999</p>

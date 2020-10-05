@@ -5,7 +5,6 @@ import '../styles/ourInvestments.css';
 import CardImg from '../images/svg/card_img.svg';
 // import IMG3 from '../images/svg/test_2.svg';
 
-
 const englishText = {
   title: 'Lorem ipsum consectetur.',
   subtitle: 'Nam ac arcu dignissim, posuere mi id,',
@@ -60,9 +59,11 @@ function imgContainer() {
 
 function apresentationSide(title, subtitle) {
   return (
-    <div className="our-investments-apresentation-container">
-      {textsContainer(title, subtitle)}
-      {imgContainer()}
+    <div className="our-investments-apresentation-mob">
+      <div className="our-investments-apresentation-container">
+        {textsContainer(title, subtitle)}
+        {imgContainer()}
+      </div>
     </div>
   );
 }
@@ -82,8 +83,10 @@ function companiesCards() {
 function companiesSide(name) {
   return (
     <div className="our-investments-companies-side">
-      <p className="our-investments-companies-side-title">{name}</p>
-      <div className="companies-cards-container">{companiesCards()}</div>
+      <div className="our-investments-companies-mob">
+        <p className="our-investments-companies-side-title">{name}</p>
+        <div className="companies-cards-container">{companiesCards()}</div>
+      </div>
     </div>
   );
 }
@@ -103,7 +106,7 @@ function OurInvestments() {
   } = window;
   const namePages = pathname.includes('/en') ? englishText : portugueseText;
   return (
-    <div>
+    <div className="our-investments-mob-container">
       <Header />
       {ourInvestmentsContainer(namePages)}
     </div>

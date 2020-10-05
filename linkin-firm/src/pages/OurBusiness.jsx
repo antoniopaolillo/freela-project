@@ -70,7 +70,7 @@ function OurBusiness() {
   const namePages = pathname.includes('/en') ? englishText : portugueseText;
 
   return (
-    <div>
+    <div className="our-business-container-outside-mob">
       <Header />
       {ourBusinessContainer(namePages)}
     </div>
