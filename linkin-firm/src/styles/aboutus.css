@@ -1,0 +1,96 @@
+.about-us-page-container {
+  background-color: #222B3E;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+}
+
+.about-us-info-container {
+  width: 50%;
+  padding-left: 60px;
+  padding-right: 116px;
+}
+
+.about-us-title-info {
+  width: 530px;
+  font-weight: bold;
+  font-size: 77.3212px;
+  line-height: 97px;
+  color: #FFFFFF;
+  border-bottom: 6.18569px solid #FFFFFF;
+  margin: 0;
+}
+
+.about-us-subtitle-info {
+  margin-top: 34px;
+  width: 415.99px;
+  height: 209.54px;
+  font-weight: bold;
+  font-size: 21.6499px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.about-us-cards-container-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 86px;
+}
+
+.about-us-cards-container-info div {
+  margin-right: 27px;
+}
+
+.about-us-cards-container-info div p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.about-us-img-container {
+  width: 50%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+}
+
+.about-us-img-container img{
+  max-width: 100%;
+  right: 0;
+}
+
+.scale-up-center:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+

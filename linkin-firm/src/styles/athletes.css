@@ -1,0 +1,141 @@
+.athlete-page-container {
+  background-color: #222B3E;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+}
+
+.athlete-page-information-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.athlete-page-title {
+  font-weight: bold;
+  width: 670px;
+  font-size: 100px;
+  line-height: 125px;
+  color: #FFFFFF;
+  border-bottom: 8px solid;
+  margin: 0px;
+}
+
+.athlete-page-subtitle {
+  width: 538px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  color: #FFFFFF;
+}
+
+.athlete-page-inf-img1-container {
+  margin-top: 640px;
+}
+
+.athlete-page-inf-right {
+  margin-left: 110px;
+}
+
+.athlete-page-ath-title {
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 125px;
+  margin-left: 110px;
+}
+
+
+.athlete-card-box {
+  display: flex;
+  flex-direction: row;
+  background-color: #2F3556;
+  width: 313px;
+  height: 226.44px;
+  position: relative;
+  margin: 0;
+}
+
+.athlete-card-box-infos {
+  margin-left: 20px;
+}
+
+.athlete-card-box-infos-title {
+  width: 121px;
+  background: #FFFAFA;
+  color:#222B3E;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 28px;
+}
+
+.athlete-card-box-infos-subtitle {
+  width: 122px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+
+.athlete-card-box-infos-inf {
+  width: 122px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 20px;
+}
+
+.athlete-card-box-img {
+  display: flex;
+  align-items: flex-end;
+  left: 121px;
+  top: 34px;
+  position: absolute;
+}
+
+.athlete-card-box-container {
+  display: flex;
+  justify-content: center;
+}
+
+.athlete-card-box-container-outside {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 360px;
+}
+
+.slick-dots {
+  background-color: #222B3E;
+}
+
+.slick-dots li {
+  margin: 0 50px;
+}
+
+
+.slick-dots li.slick-active button:before {
+  color: #C4C4C4;;
+  opacity: 100;
+  border-bottom: solid 10px #C4C4C4;
+  width: 90px;
+}
+
+.slick-dots li button:before {
+  color: white;
+  content: '_';
+  border-bottom: solid 3px #C4C4C4;
+  width: 90px;
+  font-size: 20px;
+}
+
+.slick-slider .slick-initialized {
+  background: linear-gradient(270deg, rgba(34, 43, 62, 0) 0%, #222B3E 100%);
+}
