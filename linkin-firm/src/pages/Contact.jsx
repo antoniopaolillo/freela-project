@@ -166,7 +166,7 @@ function Contact() {
   const namePages = pathname.includes('/en') ? englishTexts : portugueseTexts;
 
   return (
-    <div>
+    <div className="contact-container-mob">
       <Header />
       <div className="contact-container">{contactBody(namePages)}</div>
     </div>
