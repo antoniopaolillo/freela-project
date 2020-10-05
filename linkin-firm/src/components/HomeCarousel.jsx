@@ -94,7 +94,7 @@ function generateSlide(arr) {
           <div className="carousel-img-big-box">
             <img src={arr[0]} alt="idol" />
           </div>
-          <div>
+          <div className="btn-carousel-home-container">
             <button
               className="btn-carousel-home btn-left"
               onClick={() => plusSlides(-1)}>

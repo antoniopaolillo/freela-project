@@ -9,8 +9,8 @@ function Home() {
     <div>
       <Header />
       <HomeInfo />
-      <HomeFooter />
       <HomeCarousel />
+      <HomeFooter />
     </div>
   );
 }
