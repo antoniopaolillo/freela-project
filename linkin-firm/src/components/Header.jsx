@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from '../context/context';
 import { Link } from 'react-router-dom';
 import Logo from '../images/svg/logo.svg';
 import BrazilFlag from '../images/svg/brazil-flag.svg';
@@ -22,21 +23,25 @@ const englishArray = [
   { name: 'contact', route: '/contact' },
 ];
 
-function languageButton(icon, text) {
+function languageButton(icon, text, setAddClass, addClass) {
   return (
-    <div className="btn-language">
-      <img src={icon} alt={'flag'} className="btn-flag" />
-      <p>{text}</p>
-      <img src={Siwpper} alt="siwpper" className="btn-siwpper" />
+    <div>
+      <div className="btn-language scale-up-ver-top">
+        <div className="btn-active">
+        <img src={icon} alt={'flag'} className="btn-flag" />
+        <p>{text}</p>
+        <img src={Siwpper} alt="siwpper" className="btn-siwpper" />
+        </div>
+      </div>
     </div>
   );
 }
 
-function languageButtonsGenerator(currentLanguage) {
+function languageButtonsGenerator(currentLanguage, setAddClass, addClass) {
   if (currentLanguage[0].name === 'sobre nós') {
-    return languageButton(BrazilFlag, 'Português');
+    return languageButton(BrazilFlag, 'Português', setAddClass, addClass);
   }
-  return languageButton(USAFlag, 'English');
+  return languageButton(USAFlag, 'English', setAddClass, addClass);
 }
 
 function buttonPages({ name, route }) {
@@ -52,6 +57,7 @@ function Header() {
     location: { pathname },
   } = window;
   const namePages = pathname.includes('/en') ? englishArray : portugueseArray;
+  const { addClass, setAddClass } = useContext(Context);
 
   return (
     <header>
@@ -59,7 +65,7 @@ function Header() {
         <img src={Logo} alt="logo" className="logo" />
         <div className="links-container">
           {namePages.map(link => buttonPages(link))}
-          {languageButtonsGenerator(namePages)}
+          {languageButtonsGenerator(namePages, setAddClass, addClass)}
         </div>
       </div>
     </header>
