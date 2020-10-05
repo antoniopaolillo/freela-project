@@ -9,22 +9,24 @@
   bottom: 0;
 }
 
-.athlete-page-information-side {
+.athlete-page-inf-right {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  margin-left: 80px;
-  margin-right: 80px;
 }
 
 .athlete-page-title {
+  width: 509px;
   font-weight: bold;
-  width: 670px;
-  font-size: 100px;
-  line-height: 125px;
-  color: #FFFFFF;
-  border-bottom: 8px solid;
-  margin: 0px;
+  font-size: 75px;
+  line-height: 94px;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 21px;
+  margin-left: 80px;
+  border-bottom: 8px solid #FFFFFF;
 }
 
 .athlete-page-subtitle {
@@ -32,15 +34,14 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 35px;
-  color: #FFFFFF;
+  margin-left: 80px;
+  margin-top: 30px;
 }
 
-.athlete-page-inf-img1-container {
-  margin-top: 640px;
-}
-
-.athlete-page-inf-right {
-  margin-left: 110px;
+.athlete-page-inf-right img {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 36px;
 }
 
 .athlete-page-ath-title {
@@ -49,7 +50,6 @@
   line-height: 125px;
   margin-left: 110px;
 }
-
 
 .athlete-card-box {
   display: flex;
@@ -173,37 +173,29 @@
     justify-content: center;
   }
 
-  .athlete-page-inf-img1-container {
-    margin: 0 auto;
-  }
-
-  .athlete-page-inf-img1-container img {
-    width: 227px;
-    height: 219px;
-  }
-
   .athlete-page-title {
-    width: 265px;
-    font-size: 39.5738px;
-    line-height: 49px;
-    text-align: center;
+    width: 509px;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 94px;
+    text-align: left;
     margin: 0 auto;
     margin-top: 21px;
-    border-bottom: 3.16591px solid #FFFFFF;
+    margin-left: 80px;
+    border-bottom: 8px solid #FFFFFF;
   }
 
   .athlete-page-subtitle {
-    width: 304px;
+    width: 538px;
     font-weight: bold;
-    font-size: 15.8216px;
-    line-height: 20px;
-    text-align: center;
+    font-size: 28px;
+    line-height: 35px;
     margin: 0 auto;
-    margin-top: 38px;
+    margin-top: 30px;
   }
 
   .athlete-page-inf-right img {
-    width: 286px;
+    width: inherit;
     height: 133px;
     margin: 0 auto;
     margin-top: 36px;
