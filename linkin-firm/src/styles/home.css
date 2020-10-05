@@ -262,6 +262,28 @@
   animation-duration: 1.5s;
 }
 
+.container-paralax-home-top {
+  background-image: url('../images/svg/home_background.svg');
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-paralax-home-top p {
+  width: 439px;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 150px;
+  color: #FFFFFF;
+  margin-top: 300px;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
