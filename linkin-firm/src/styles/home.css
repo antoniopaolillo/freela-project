@@ -147,6 +147,131 @@
   width: 765px;
 }
 
+.carousel-home-container {
+  width: 100%;
+  background: white;
+}
+
+.slideshow-container {
+  width: 962px;
+  position: relative;
+  margin: auto;
+  margin-top: 234px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.btn-carousel-home {
+  border: none;
+  background-color: transparent;
+}
+
+.btn-left {
+  position: absolute;
+  top: 420px;
+  left: 400px;
+}
+
+.btn-right {
+  position: absolute;
+  top: 329px;
+  left: 470px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.carousel-home-dots-box {
+  width: 153px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-img-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-img-buttons-container img {
+  width: auto;
+}
+
+.carousel-home-box {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.carousel-home-info-container {
+  margin-left: 90px;
+}
+
+.carousel-home-info-title {
+  width: 335px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 62px;
+  color: #131A27;
+}
+
+.carousel-home-info-subtitle {
+  width: 327px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #131A27;
+}
+
+.carousel-home-info-container button {
+  width: 161px;
+  height: 45px;
+  background: #131A27;
+  border-radius: 38px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  border: none;
+}
+
+.carousel-home-dots-container {
+  width: 100%;
+  margin-bottom: 149px;
+  margin-top: 77px;
+}
+
+.active, .dot:hover {
+  background: #131A27;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 @media only screen and (max-width: 599px) {
   .home-info-box {
     display: flex;
@@ -250,7 +375,6 @@
   }
 
   .home-footer-contacts {
-    /* o tamanho abaixo terá que ser ajustado após alterar o componente de lugar */
     top: 1870px;
     position: absolute;
   }
