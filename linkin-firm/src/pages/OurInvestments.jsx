@@ -60,9 +60,11 @@ function imgContainer() {
 
 function apresentationSide(title, subtitle) {
   return (
+    <div className="our-investments-apresentation-mob">
     <div className="our-investments-apresentation-container">
       {textsContainer(title, subtitle)}
       {imgContainer()}
+    </div>
     </div>
   );
 }
@@ -103,7 +105,7 @@ function OurInvestments() {
   } = window;
   const namePages = pathname.includes('/en') ? englishText : portugueseText;
   return (
-    <div>
+    <div className="our-investments-mob-container">
       <Header />
       {ourInvestmentsContainer(namePages)}
     </div>

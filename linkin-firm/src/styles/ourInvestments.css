@@ -107,3 +107,62 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 599px) {
+  .our-investments-mob-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .our-investments-apresentation-mob {
+    width: 100%;
+    background-color: #222B3E;
+  }
+
+  .our-investments-container {
+    width: 360px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .our-investments-apresentation-container {
+    height: 330px;
+  }
+
+  .our-investments-texts-side {
+    margin: 0 auto;
+    width: 225px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .our-investments-texts-title {
+    width: 222.57px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 44px;
+    border-bottom: 5.41208px solid #FFFFFF;
+    height: auto;
+  }
+
+  .our-investments-texts-subtitle {
+    width: 219.82px;
+    font-size: 19.1566px;
+    line-height: 24px;
+  }
+
+  .our-investments-img-side img {
+    height: 310px;
+    top: 141px;
+    position: absolute;
+  }
+
+  .our-investments-companies-side {
+    background-color: white;
+    margin: 0 auto;
+  }
+}
