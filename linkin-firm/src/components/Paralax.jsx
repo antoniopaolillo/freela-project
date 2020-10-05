@@ -4,7 +4,7 @@ import '../styles/home.css';
 function Paralax() {
   return (
     <div className="container-paralax-home-top">
-      <p>Explore...</p>
+      <p>Explore</p>
     </div>
   );
 }

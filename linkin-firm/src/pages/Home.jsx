@@ -4,6 +4,7 @@ import HomeInfo from '../components/HomeInfo';
 import HomeFooter from '../components/HomeFooter';
 import HomeCarousel from '../components/HomeCarousel';
 import Paralax from '../components/Paralax';
+import HomeFooterParalax from '../components/HomeFooterParalax';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <HomeInfo />
       <HomeCarousel />
       <HomeFooter />
+      <HomeFooterParalax />
     </div>
   );
 }

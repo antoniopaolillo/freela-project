@@ -270,7 +270,6 @@
   position: relative;
   height: 100vh;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -280,8 +279,37 @@
   font-weight: bold;
   font-size: 120px;
   line-height: 150px;
+  height: 150px;
   color: #FFFFFF;
   margin-top: 300px;
+  overflow:hidden;
+  animation:typing 2s steps(22,end) forwards,
+            blink 1s infinite;
+}
+
+.home-footer-paralax-img {
+  background-image: url('../images/svg/foots_footer_img.svg');
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  height: 40vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@keyframes typing {
+  0% { width:0% }
+  100% { width: 439px }
+}
+@keyframes blink {
+  0%,100% {
+    border-right:2px solid transparent;
+  }
+  50% {
+    border-right:2px solid white;
+  }
 }
 
 @-webkit-keyframes fade {
@@ -476,5 +504,26 @@
   .carousel-home-dots-container {
     margin-top: 44px;
     margin-bottom: 35px;
+  }
+
+  .home-footer-paralax-img {
+    height: 195px;
+    margin: 0;
+    background-position: left bottom;
+    background-size: 235px;
+  }
+
+  .container-paralax-home-top p {
+    width: 131.57px;
+    font-size: 35.9645px;
+    line-height: 45px;
+    animation: none;
+    margin-top: 230px;
+  }
+
+  .container-paralax-home-top {
+    background-image: url('../images/svg/background_mobile.svg');
+    background-size: 540px;
+    height: 540px;
   }
 }
