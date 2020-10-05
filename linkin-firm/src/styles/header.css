@@ -107,6 +107,10 @@
   z-index: 10;
 }
 
+.header-mobile {
+  display: none;
+}
+
 @-webkit-keyframes scale-up-ver-top {
   0% {
     -webkit-transform: scaleY(0.4);
@@ -134,5 +138,107 @@
             transform: scaleY(1);
     -webkit-transform-origin: 0% 100%;
             transform-origin: 0% 100%;
+  }
+}
+
+
+@media only screen and (max-width: 599px) {
+  .header-mobile {
+    display: block;
+  }
+
+  .links-container, .language-container {
+    display: none;
+  }
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: white;
+
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: white;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #222B3E;
+    box-shadow: -7px -1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding-left: 17px;
+    padding-top: 87px;
+  }
+
+  .link-mob {
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .scale-up-ver-top {
+    width: 200px;
+    height: 100px;
+  }
+
+  .btn-active {
+    height: 300px;
+  }
+  .btn-language .btn-active {
+    width: 200px;
+    height: 33px;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+
+  .btn-language {
+    margin-left: 0px;
+  }
+
+  .header-mobile-logo {
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .home-footer-contacts-mob {
+    margin-top: 24px;
+  }
+
+  .home-footer-contacts-mob a img {
+    width: 37px;
+    margin-right: 17px;
   }
 }

@@ -5,6 +5,7 @@ import Logo from '../images/svg/logo.svg';
 import BrazilFlag from '../images/svg/brazil-flag.svg';
 import USAFlag from '../images/svg/usa-flag.svg';
 import Siwpper from '../images/svg/siwpper.svg';
+import HeaderMobile from '../components/HeaderMobile';
 import '../styles/header.css';
 
 const portugueseArray = [
@@ -45,7 +46,6 @@ function languageButton(arr, setAddClass, addClass) {
       </div>
       <Link
         to={arr[2]}
-        onClick={() => console.log('oi')}
         className={
           cardClass.length === 2 ? 'btn-active btn-work' : 'btn-display-none'
         }>
@@ -86,9 +86,15 @@ function Header() {
   } = window;
   const namePages = pathname.includes('/en') ? englishArray : portugueseArray;
   const { addClass, setAddClass } = useContext(Context);
-
   return (
     <header>
+      <div className="header-mobile">
+        <HeaderMobile
+          namePages={namePages}
+          languagebtt={languageButtonsGenerator}
+          logo={Logo}
+        />
+      </div>
       <div className="header-container">
         <div className="header-left-side-container">
           <Link to={pathname.includes('/en') ? '/en' : '/'}>
