@@ -1,0 +1,133 @@
+.our-clients-container {
+  width: 100%;
+  height: auto;
+  min-height: 83vh;
+  background: #222B3E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFFFFF;
+  padding-top: 90px;
+}
+
+.our-clients-header-title {
+  width: 916px;
+  font-weight: bold;
+  font-size: 70.6294px;
+  line-height: 118px;
+  text-align: center;
+  border-bottom: 11.3007px solid #FFFFFF;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.our-clients-header-subtitle {
+  width: 916px;
+  font-weight: bold;
+  font-size: 32.63px;
+  line-height: 41px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.our-clients-header-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.our-clients-title {
+  width: 916px;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 69px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 65px;
+  margin-bottom: 60px;
+}
+
+.our-client-card-box {
+  width: 311px;
+  height: 113px;
+  background: #2F3556;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin-bottom: 22px;
+}
+
+.our-client-card-box img {
+  margin-left: 11px;
+  margin-right: 19px;
+}
+
+
+.our-clients-card-texts-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-clients-card-texts-title {
+  background: #FFFAFA;
+  color: #222B3E;
+  width: 121px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.our-clients-card-texts-subtitle {
+  width: 122px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 0px;
+}
+
+.our-clients-cards-container {
+  margin-left: 75px;
+  margin-right: 75px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 122px;
+}
+
+
+@media only screen and (max-width: 599px) {
+  .our-clients-header-title {
+    width: 222.57px;
+    font-size: 35px;
+    line-height: 44px;
+    margin-bottom: 27px;
+    border-bottom: 5.41208px solid #FFFFFF;
+  }
+
+  .our-clients-header-subtitle {
+    width: 219.82px;
+    font-size: 19.1566px;
+    line-height: 24px;
+    margin-bottom: 56px;
+  }
+
+  .our-clients-title {
+    width: auto;
+    font-size: 19.6943px;
+    line-height: 25px;
+  }
+
+  .our-client-card-box {
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+
+  .our-clients-cards-container {
+    margin: 0 auto
+  }
+}
