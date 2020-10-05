@@ -43,8 +43,21 @@
 	margin-left: 11px;
   cursor: pointer;
 }
-.btn-active{
-  display: none;
+
+.btn-language .btn-active{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100px;
+  height: 28px;
+  border-radius: 100px;
+  background-color: #2F3556;
+	margin-left: 11px;
+  cursor: pointer;
+}
+.language-container {
+
 }
 
 .scale-up-ver-top .btn-active{
@@ -56,7 +69,8 @@
   height: 28px;
   border-radius: 100px;
   background-color: #2F3556;
-	margin-left: 11px;
+  margin-left: 0px;
+    top: 0px;
   cursor: pointer;
 }
 
@@ -71,11 +85,12 @@
 	margin-left: 11px;
   cursor: pointer;
 }
+
 .scale-up-ver-top:active .btn-flag {
   margin-left: 10px;
 }
 
-.scale-up-ver-top:active {
+.scale-up-ver-top {
   margin-top: 28px;
   align-items: center;
   display: flex;
