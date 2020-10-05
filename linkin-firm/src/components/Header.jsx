@@ -33,17 +33,24 @@ function languageButton(icon, text, setAddClass, addClass) {
   }
 
   return (
-      <div className={cardClass.join(' ')}
-          onClick={() => {
-            setAddClass(!addClass);
-          }}
-      >
-        <div className="btn-active">
-          <img src={icon} alt={'flag'} className="btn-flag" />
-          <p>{text}</p>
-          <img src={Siwpper} alt="siwpper" className="btn-siwpper" />
-        </div>
+    <div
+      className={cardClass.join(' ')}
+      onClick={() => {
+        setAddClass(!addClass);
+      }}>
+      <div
+        className={cardClass.length === 2 ? 'btn-active btn-after-click' : 'btn-active'}>
+        <img src={icon} alt={'flag'} className="btn-flag" />
+        <p>{text}</p>
+        <img src={Siwpper} alt="siwpper" className="btn-siwpper" />
       </div>
+      <div
+        className={cardClass.length === 2 ? 'btn-active' : 'btn-display-none btn-active'}>
+        <img src={icon} alt={'flag'} className="btn-flag" />
+        <p>{text}</p>
+        <img src={Siwpper} alt="siwpper" className="btn-siwpper" />
+      </div>
+    </div>
   );
 }
 
@@ -72,9 +79,11 @@ function Header() {
   return (
     <header>
       <div className="header-container">
-        <img src={Logo} alt="logo" className="logo" />
-        <div className="links-container">
-          {namePages.map(link => buttonPages(link))}
+        <div className="header-left-side-container">
+          <img src={Logo} alt="logo" className="logo" />
+          <div className="links-container">
+            {namePages.map(link => buttonPages(link))}
+          </div>
         </div>
         <div className="language-container">
           {languageButtonsGenerator(namePages, setAddClass, addClass)}

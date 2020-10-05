@@ -86,9 +86,9 @@ function showSlides(n) {
   dots[slideIndex - 1].className += ' active';
 }
 
-function generateSlide(arr) {
+function generateSlide(arr, index) {
   return (
-    <div class="mySlides fade">
+    <div key={`${arr[1]}-${index}`} className="mySlides fade">
       <div className="carousel-home-box">
         <div className="carousel-img-buttons-container">
           <div className="carousel-img-big-box">
@@ -126,16 +126,16 @@ function HomeCarousel() {
     showSlides(slideIndex);
   });
   return (
-    <div class="carousel-home-container">
-      <div class="slideshow-container">
-        {namePages.map(arr => generateSlide(arr))}
+    <div className="carousel-home-container">
+      <div className="slideshow-container">
+        {namePages.map((arr, index) => generateSlide(arr, index))}
       </div>
       <div className="carousel-home-dots-container">
         <div className="carousel-home-dots-box">
-          <span class="dot" onClick={() => currentSlide(1)}></span>
-          <span class="dot" onClick={() => currentSlide(2)}></span>
-          <span class="dot" onClick={() => currentSlide(3)}></span>
-          <span class="dot" onClick={() => currentSlide(4)}></span>
+          <span className="dot" onClick={() => currentSlide(1)}></span>
+          <span className="dot" onClick={() => currentSlide(2)}></span>
+          <span className="dot" onClick={() => currentSlide(3)}></span>
+          <span className="dot" onClick={() => currentSlide(4)}></span>
         </div>
       </div>
     </div>
