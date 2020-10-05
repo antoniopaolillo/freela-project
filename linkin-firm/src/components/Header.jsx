@@ -25,7 +25,7 @@ const englishArray = [
   { name: 'contact', route: '/en/contact' },
 ];
 
-function languageButton(icon, text, setAddClass, addClass) {
+function languageButton(arr, setAddClass, addClass) {
   const cardClass = ['btn-language'];
 
   if (addClass === true) {
@@ -33,32 +33,43 @@ function languageButton(icon, text, setAddClass, addClass) {
   }
 
   return (
-    <div
-      className={cardClass.join(' ')}
-      onClick={() => {
-        setAddClass(!addClass);
-      }}>
+    <div className={cardClass.join(' ')}>
       <div
-        className={cardClass.length === 2 ? 'btn-active btn-after-click' : 'btn-active'}>
-        <img src={icon} alt={'flag'} className="btn-flag" />
-        <p>{text}</p>
+        className="btn-active"
+        onClick={() => {
+          setAddClass(!addClass);
+        }}>
+        <img src={arr[0]} alt={'flag'} className="btn-flag" />
+        <p>{arr[1]}</p>
         <img src={Siwpper} alt="siwpper" className="btn-siwpper" />
       </div>
-      <div
-        className={cardClass.length === 2 ? 'btn-active' : 'btn-display-none btn-active'}>
-        <img src={icon} alt={'flag'} className="btn-flag" />
-        <p>{text}</p>
+      <Link
+        to={arr[2]}
+        onClick={() => console.log('oi')}
+        className={
+          cardClass.length === 2 ? 'btn-active btn-work' : 'btn-display-none'
+        }>
+        <img src={arr[3]} alt={'flag'} className="btn-flag" />
+        <p>{arr[4]}</p>
         <img src={Siwpper} alt="siwpper" className="btn-siwpper" />
-      </div>
+      </Link>
     </div>
   );
 }
 
 function languageButtonsGenerator(currentLanguage, setAddClass, addClass) {
   if (currentLanguage[0].name === 'sobre nós') {
-    return languageButton(BrazilFlag, 'Português', setAddClass, addClass);
+    return languageButton(
+      [BrazilFlag, 'Português', '/en', USAFlag, 'English'],
+      setAddClass,
+      addClass
+    );
   }
-  return languageButton(USAFlag, 'English', setAddClass, addClass);
+  return languageButton(
+    [USAFlag, 'English', '/', BrazilFlag, 'Português'],
+    setAddClass,
+    addClass
+  );
 }
 
 function buttonPages({ name, route }) {
@@ -80,7 +91,9 @@ function Header() {
     <header>
       <div className="header-container">
         <div className="header-left-side-container">
-          <img src={Logo} alt="logo" className="logo" />
+          <Link to={pathname.includes('/en') ? '/en' : '/'}>
+            <img src={Logo} alt="logo" className="logo" />
+          </Link>
           <div className="links-container">
             {namePages.map(link => buttonPages(link))}
           </div>
