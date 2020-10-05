@@ -12,8 +12,7 @@ const englishTexts = {
 };
 const portugueseTexts = {
   title: 'Atletas',
-  subtitle:
-    'Ser atleta é ir muito além de uma vitória ou derrota.',
+  subtitle: 'Ser atleta é ir muito além de uma vitória ou derrota.',
   roleName: 'Nossos atletas',
 };
 
