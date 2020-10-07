@@ -37,9 +37,9 @@ const portugueseTexts = {
   ],
 };
 
-function contacts() {
+export function contacts(mod='') {
   return (
-    <div className="home-footer-contacts">
+    <div className={`home-footer-contacts${mod}`}>
       <a
         target="_blank"
         rel="noopener noreferrer"
