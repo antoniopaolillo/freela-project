@@ -83,63 +83,60 @@
     ) 1 1%;
 }
 
+.our-business-img-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
 @keyframes img1 {
 	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     transform: translatey(-25px);
 	}
 	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
     transform: translatey(10px);
 
 	}
 	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     transform: translatey(-25px);
 	}
 }
 
 @keyframes img2 {
 	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
 	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
 		transform: translatey(-20px);
 	}
 	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
 }
 
 @keyframes img3 {
 	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(-38px);
 	}
 	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
 		transform: translatey(-20px);
 	}
 	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(-38px);
 	}
 }
 
 @keyframes img4 {
 	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
 	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
 		transform: translatey(-28px);
 	}
 	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
 }
@@ -191,7 +188,7 @@
   }
 
   .our-business-texts-title {
-    width: 270px;
+    width: 320px;
     font-weight: bold;
     font-size: 39.5738px;
     line-height: 49px;
@@ -217,24 +214,39 @@
   }
 
   .our-business-img-1 {
+    margin-right: 15px;
+    margin-top: 150px;
+  }
+  .our-business-img-1 img {
     width: 70px;
     height: 70px;
     margin-right: 0px;
   }
 
-  .our-business-img-2, .our-business-img-4 {
+  .our-business-img-2 img, .our-business-img-4 img{
     width: 59px;
     height: 59px;
   }
 
-  .our-business-img-3 {
+  .our-business-img-3 img {
     width: 79px;
     height: 79px;
+  }
+
+  .our-business-img-3 {
+    margin-top: 200px;
   }
 
   .our-business-imgs-side {
     width: 100%;
     height: 361px;
     margin-bottom: 30px;
+  }
+
+  .our-business-img-text {
+    font-size: 9.25879px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
   }
 }

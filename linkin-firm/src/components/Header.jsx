@@ -12,8 +12,8 @@ const portugueseArray = [
   { name: 'sobre nós', route: '/sobre-nos' },
   { name: 'nosso négocio', route: '/nosso-negocio' },
   { name: 'atletas', route: '/atletas' },
-  { name: 'investimentos', route: '/investimentos' },
-  { name: 'clientes', route: '/clientes' },
+  { name: 'investimentos', route: '/nossos-investimentos' },
+  { name: 'clientes', route: '/nossos-clientes' },
   { name: 'contato', route: '/contato' },
 ];
 

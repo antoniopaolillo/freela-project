@@ -2,8 +2,12 @@ import React from 'react';
 import Header from '../components/Header';
 import IMG from '../images/png/our-investments-img.png';
 import '../styles/ourInvestments.css';
-import CardImg from '../images/svg/card_img.svg';
-// import IMG3 from '../images/svg/test_2.svg';
+import IMG1 from '../images/svg/Mask Group.svg';
+// import IMG2 from '../images/svg/our_inv_2.svg';
+// import IMG3 from '../images/svg/our_inv_3.svg';
+// import IMG4 from '../images/svg/our_inv_4.svg';
+// import IMG5 from '../images/svg/our_inv_5.svg';
+// import IMG6 from '../images/svg/our_inv_6.svg';
 
 const englishText = {
   title: 'Lorem ipsum consectetur.',
@@ -12,33 +16,26 @@ const englishText = {
 };
 
 const portugueseText = {
-  title: 'Lorem ipsum consectetur.',
+  title: 'Investimentos',
   subtitle: 'Nam ac arcu dignissim, posuere mi id,',
-  h1Name: 'Nossas empresas',
+  h1Name: 'Nossos investimentos',
+  companiesSubtitles: [
+    [
+      'Turuvius',
+      'Pesquisa jurisprudencial inteligente e jurimetria integrada.',
+      IMG1,
+    ],
+    ['Mottu', 'Plataforma de aluguel de motos', IMG1],
+    ['Nexoos', 'Plataforma de empŕestimo B2B', IMG1],
+    ['Sigalei', 'Inteligência politica e regulatória', IMG1],
+    [
+      'Golden Set Analytics',
+      'Análise de tênis de alto desempenho com base em Big Data e estatísticas',
+      IMG1,
+    ],
+    ['Religion of Sports', 'Produtora audiovisual esportiva', IMG1],
+  ],
 };
-
-const arr = [
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
-  9,
-  10,
-  11,
-  12,
-  13,
-  14,
-  15,
-  16,
-  17,
-  18,
-  19,
-  29,
-];
 
 function textsContainer(title, subtitle) {
   return (
@@ -68,34 +65,41 @@ function apresentationSide(title, subtitle) {
   );
 }
 
-function companiesCards() {
-  return arr.map(() => (
+function companiesCards(subtitles) {
+  return subtitles.map(subtitle => (
     <div className="our-investments-companies-card">
-      <img src={CardImg} alt="companie logo" />
+      <img src={subtitle[2]} alt="companie logo" />
       <div className="companie-card-texts">
-        <p className="companie-card-title">Lorem ipsum</p>
-        <p className="companie-card-subtitle">Lorem ipsum tema for gertmun</p>
+        <p className="companie-card-title">{subtitle[0]}</p>
+        <p className="companie-card-subtitle">{subtitle[1]}</p>
       </div>
     </div>
   ));
 }
 
-function companiesSide(name) {
+function companiesSide(name, subtitles) {
   return (
     <div className="our-investments-companies-side">
       <div className="our-investments-companies-mob">
         <p className="our-investments-companies-side-title">{name}</p>
-        <div className="companies-cards-container">{companiesCards()}</div>
+        <div className="companies-cards-container">
+          {companiesCards(subtitles)}
+        </div>
       </div>
     </div>
   );
 }
 
-function ourInvestmentsContainer({ title, subtitle, h1Name }) {
+function ourInvestmentsContainer({
+  title,
+  subtitle,
+  h1Name,
+  companiesSubtitles,
+}) {
   return (
     <div className="our-investments-container">
       {apresentationSide(title, subtitle)}
-      {companiesSide(h1Name)}
+      {companiesSide(h1Name, companiesSubtitles)}
     </div>
   );
 }
