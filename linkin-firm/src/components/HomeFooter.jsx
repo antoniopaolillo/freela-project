@@ -114,7 +114,7 @@ function footerLeftSide({ link }) {
 
 function eventCard({ title, img }) {
   return (
-    <div className="home-footer-card">
+    <div key={title} className="home-footer-card">
       <img src={img} alt={title} />
       <p>{title}</p>
     </div>

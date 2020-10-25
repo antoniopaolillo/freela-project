@@ -35,8 +35,7 @@
 .our-investments-texts-title {
   font-size: 70.6294px;
   line-height: 88px;
-  width: 464.74px;
-  height: 177.99px;
+  width: 495.74px;
   border-bottom: 11.3007px solid #FFFFFF;
   font-weight: bold;
 }
@@ -45,7 +44,7 @@
   font-size: 40px;
   line-height: 50px;
   font-weight: bold;
-  width: 459px;
+  width: 669px;
 }
 
 .our-investments-companies-side {
@@ -69,31 +68,30 @@
 .our-investments-companies-card {
   display: flex;
   flex-direction: row;
-  width: 288.92px;
-  height: 105px;
-  background: #2F3556;
+  width: 391.03px;
+  height: 142.11px;
   border-radius: 5px;
   margin-bottom: 39px;
   margin-right: 26px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .companie-card-texts {
-  margin-left: 19px;
+  margin-left: 177px;
 }
 
 .companie-card-title {
   text-align: center;
-  width: 121px;
-  height: 19px;
   background: #FFFAFA;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   color: #222B3E;
+  width: fit-content;
 }
 
 .companie-card-subtitle {
-  width: 121px;
+  width: 165px;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -105,7 +103,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 @media only screen and (max-width: 599px) {
@@ -170,7 +167,6 @@
   .our-investments-companies-side-title {
     font-size: 46.988px;
     line-height: 59px;
-    width: 255px;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -184,5 +180,25 @@
   .our-investments-companies-card {
     margin: 0 auto;
     margin-bottom: 20px;
+    width: 288.31px;
+    height: 104.78px;
+    background-position: inherit;
+    background-size: 288px 105px;
+  }
+
+  .companie-card-texts {
+    margin-left: 130px;
+  }
+
+  .companie-card-title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .companie-card-subtitle {
+    font-size: 10.3223px;
+    line-height: 13px;
+    text-align: left;
+    width: 133px;
   }
 }
