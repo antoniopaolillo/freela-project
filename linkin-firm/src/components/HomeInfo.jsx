@@ -10,7 +10,7 @@ const englishTexts = {
 
 const portugueseTexts = {
   title: 'Marcio Torres',
-subtitle: `Iniciou sua carreira no tênis, se destacando por alcançar o ranking #1 do Brasil! \r Nos EUA formou-se em Medicina esportiva e concluiu o MBA em  Comércio Exterior.\n Jogou no ATP Tour por 9 anos, alcançando o ranking #132 do mundo. \n Sofreu uma grave contusão que o tirou cedo das quadras, quando decidiu fundar a LinkinFirm com o objetivo de ajudar a potencializando as conexões entre empresas e atletas.`,
+subtitle: `Iniciou sua carreira no tênis, se destacando por alcançar o ranking #1 do Brasil! Nos EUA formou-se em Medicina esportiva e concluiu o MBA em Comércio Exterior. Jogou no ATP Tour por 9 anos, alcançando o ranking #132 do mundo. Sofreu uma grave contusão que o tirou cedo das quadras, quando decidiu fundar a LinkinFirm com o objetivo de ajudar a potencializar as conexões entre empresas e atletas.`,
 };
 
 function imgSide() {
