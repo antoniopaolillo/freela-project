@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import IMG from '../images/png/our-investments-img.png';
 import '../styles/ourInvestments.css';
@@ -10,30 +11,92 @@ import sigaleiLogo from '../images/svg/sigalei_logo.svg';
 import rosLogo from '../images/svg/ros_logo.svg';
 
 const englishText = {
-  title: 'Lorem ipsum consectetur.',
-  subtitle: 'Nam ac arcu dignissim, posuere mi id,',
-  h1Name: 'Our Companies',
-};
-
-const portugueseText = {
   title: 'Investimentos',
-  subtitle: 'Somos um parceiro empreendedor bem conectado que estará ao seu lado, ajudando de maneira impactante.',
+  subtitle:
+    'Somos um parceiro empreendedor bem conectado que estará ao seu lado, ajudando de maneira impactante.',
   h1Name: 'Nossos investimentos',
   companiesSubtitles: [
     [
       'Turuvius',
       'Pesquisa jurisprudencial inteligente e jurimetria integrada.',
       TuruviusLogo,
+      'https://turivius.com/',
     ],
-    ['Mottu', 'Plataforma de aluguel de motos', MottuLogo],
-    ['Nexoos', 'Plataforma de empŕestimo B2B', nexoosLogo],
-    ['Sigalei', 'Inteligência politica e regulatória', sigaleiLogo],
+    [
+      'Mottu',
+      'Plataforma de aluguel de motos',
+      MottuLogo,
+      'https://mottu.com.br/',
+    ],
+    [
+      'Nexoos',
+      'Plataforma de empŕestimo B2B',
+      nexoosLogo,
+      'https://www.nexoos.com.br/',
+    ],
+    [
+      'Sigalei',
+      'Inteligência politica e regulatória',
+      sigaleiLogo,
+      'https://www.sigalei.com.br/',
+    ],
     [
       'Golden Set Analytics',
       'Análise de tênis de alto desempenho com base em Big Data e estatísticas',
       gsaLogo,
+      'https://www.goldensetanalytics.com/',
     ],
-    ['Religion of Sports', 'Produtora audiovisual esportiva', rosLogo],
+    [
+      'Religion of Sports',
+      'Produtora audiovisual esportiva',
+      rosLogo,
+      'https://www.religionofsports.com/',
+    ],
+  ],
+};
+
+const portugueseText = {
+  title: 'Investimentos',
+  subtitle:
+    'Somos um parceiro empreendedor bem conectado que estará ao seu lado, ajudando de maneira impactante.',
+  h1Name: 'Nossos investimentos',
+  companiesSubtitles: [
+    [
+      'Turuvius',
+      'Pesquisa jurisprudencial inteligente e jurimetria integrada.',
+      TuruviusLogo,
+      'https://turivius.com/',
+    ],
+    [
+      'Mottu',
+      'Plataforma de aluguel de motos',
+      MottuLogo,
+      'https://mottu.com.br/',
+    ],
+    [
+      'Nexoos',
+      'Plataforma de empŕestimo B2B',
+      nexoosLogo,
+      'https://www.nexoos.com.br/',
+    ],
+    [
+      'Sigalei',
+      'Inteligência politica e regulatória',
+      sigaleiLogo,
+      'https://www.sigalei.com.br/',
+    ],
+    [
+      'Golden Set Analytics',
+      'Análise de tênis de alto desempenho com base em Big Data e estatísticas',
+      gsaLogo,
+      'https://www.goldensetanalytics.com/',
+    ],
+    [
+      'Religion of Sports',
+      'Produtora audiovisual esportiva',
+      rosLogo,
+      'https://www.religionofsports.com/',
+    ],
   ],
 };
 
@@ -67,12 +130,16 @@ function apresentationSide(title, subtitle) {
 
 function companiesCards(subtitles) {
   return subtitles.map(subtitle => (
-    <div className="our-investments-companies-card" style={{ backgroundImage: `url(${subtitle[2]})`}}>
-      <div className="companie-card-texts">
-        <p className="companie-card-title">{subtitle[0]}</p>
-        <p className="companie-card-subtitle">{subtitle[1]}</p>
+    <Link to={subtitle[3]}>
+      <div
+        className="our-investments-companies-card"
+        style={{ backgroundImage: `url(${subtitle[2]})` }}>
+        <div className="companie-card-texts">
+          <p className="companie-card-title">{subtitle[0]}</p>
+          <p className="companie-card-subtitle">{subtitle[1]}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   ));
 }
 

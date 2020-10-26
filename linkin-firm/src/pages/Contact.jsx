@@ -8,8 +8,8 @@ import 'react-phone-input-2/lib/style.css';
 import '../styles/contact.css';
 
 const portugueseTexts = {
-  title: 'Lorem ipsum dolor sit amet',
-  subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  title: 'Contatos',
+  subtitle: 'Como você prefere falar com a gente?',
   yourName: 'Seu nome',
   yourPhone: 'Seu telefone',
   email: 'Endereço de email',
@@ -43,7 +43,10 @@ function contactDetails() {
     <div className="contact-details-mob">
       <div className="icon-info-container">
         <img src={phone} className="details-icon" alt="phone-icon" />
-        <p className="details-number">+1 999 999 999</p>
+        <div className="details-number-container">
+          <p className="details-number">+1 305 890 95-74</p>
+          <p className="details-number">+55 11 94286-7820</p>
+        </div>
       </div>
       <div className="icon-info-container">
         <img src={mail} className="details-icon" alt="mail-icon" />
