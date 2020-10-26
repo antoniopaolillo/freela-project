@@ -80,8 +80,8 @@ const englishText = {
 };
 
 const portugueseText = {
-  title: 'Lorem ipsum consectetur.',
-  subtitle: 'Nam ac arcu dignissim, posuere mi id,',
+  title: 'Clientes',
+  subtitle: 'Consultoria de negócios',
   h1Name: 'Nossos clientes',
   clients: [
     { img: AliansceSonae, title: 'Aliansce sonae', subtitle: 'Administradora de shoppings centers' },
