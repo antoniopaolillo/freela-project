@@ -47,8 +47,9 @@
 }
 
 .card-service-clients p {
+  width: 120px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
