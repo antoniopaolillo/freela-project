@@ -72,7 +72,6 @@
 .our-clients-card-texts-title {
   background: #FFFAFA;
   color: #222B3E;
-  width: 121px;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -82,7 +81,7 @@
 }
 
 .our-clients-card-texts-subtitle {
-  width: 122px;
+  width: 140px;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
