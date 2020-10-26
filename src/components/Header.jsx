@@ -5,7 +5,7 @@ import Logo from '../images/svg/logo.svg';
 import BrazilFlag from '../images/svg/brazil-flag.svg';
 import USAFlag from '../images/svg/usa-flag.svg';
 import Siwpper from '../images/svg/siwpper.svg';
-import HeaderMobile from '../components/HeaderMobile';
+import HeaderMobile from './HeaderMobile';
 import '../styles/header.css';
 
 const portugueseArray = [

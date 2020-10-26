@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Context from '../context/context';
 import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
-import { contacts } from '../components/HomeFooter';
+import { contacts } from './HomeFooter';
 
 function generateLinks({ name, route }) {
   return (
