@@ -439,6 +439,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 360px;
+    top: 350px;
+    position: absolute;
+    margin: 0 auto;
   }
 
   .carousel-img-big-box {
@@ -462,6 +466,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 48px;
   }
 
   .btn-carousel-home img {
@@ -489,10 +494,9 @@
   }
 
   .home-footer-paralax-img {
-    height: 195px;
-    margin: 0;
-    background-position: left bottom;
-    background-size: 235px;
+    background-image: url('../images/svg/home_footer_mobile.svg');
+    height: 210px;
+
   }
 
   .container-paralax-home-top p {
