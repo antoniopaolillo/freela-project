@@ -13,8 +13,11 @@ import imgTeliana from '../images/svg/atletas/bg-teliana.svg';
 import imgThiago from '../images/svg/atletas/bg-thiago.svg';
 import imgThomaz from '../images/svg/atletas/bg-thomaz.svg';
 import instagramIco from '../images/svg/instagram.svg';
-import facebookIco from '../images/svg/facebook.svg'
-import twitterIco from '../images/svg/twitter.svg'
+import facebookIco from '../images/svg/facebook.svg';
+import twitterIco from '../images/svg/twitter.svg';
+// import setaDireita from '../images/svg/seta esquerda.svg';
+// import setaEsquerda from '../images/svg/seta direita.svg';
+
 
 
 const cardingObj = {
