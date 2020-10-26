@@ -1,60 +1,54 @@
 import React, { useEffect } from 'react';
-import CarouselImg from '../images/svg/carousel_big_img.svg';
+import Carousel1 from '../images/svg/home_carousel_1.svg';
+import Carousel2 from '../images/svg/home_carousel_2.svg';
+import Carousel3 from '../images/svg/home_carousel_3.svg';
 import ArrowRight from '../images/svg/arrow_rigth.svg';
 import ArrowLeft from '../images/svg/arrow_left.svg';
+import { Link } from 'react-router-dom';
 var slideIndex = 1;
 
 const englishTexts = [
   [
-    CarouselImg,
+    Carousel1,
     'Lorem ipsum dolor sit amet',
     "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",
     'VEJA MAIS',
+    '/en/athletes'
   ],
   [
-    CarouselImg,
+    Carousel2,
     'Lorem ipsum dolor sit amet',
     "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",
     'VEJA MAIS',
+    '/en/our-business'
   ],
   [
-    CarouselImg,
+    Carousel3,
     'Lorem ipsum dolor sit amet',
     "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",
     'VEJA MAIS',
-  ],
-  [
-    CarouselImg,
-    'Lorem ipsum dolor sit amet',
-    "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",
-    'VEJA MAIS',
+    '/en/our-clients'
   ],
 ];
 
 const portugueseTexts = [
   [
-    CarouselImg,
-    'Lorem ipsum dolor sit amet',
-    "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",
+    Carousel1,
+    "Ser atleta é ir muito além de uma vitória",
     'VEJA MAIS',
+    '/atletas'
   ],
   [
-    CarouselImg,
-    'Lorem ipsum dolor sit amet',
-    "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",
+    Carousel2,
+    'Ajudando grandes empresas a fazerem grandes negócios',
     'VEJA MAIS',
+    '/nosso-negocio'
   ],
   [
-    CarouselImg,
-    'Lorem ipsum dolor sit amet',
-    "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",
+    Carousel3,
+    'Colocando seus clientes um passo a frente',
     'VEJA MAIS',
-  ],
-  [
-    CarouselImg,
-    'Lorem ipsum dolor sit amet',
-    "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",
-    'VEJA MAIS',
+    '/nossos-clientes'
   ],
 ];
 
@@ -109,8 +103,7 @@ function generateSlide(arr, index) {
         </div>
         <div className="carousel-home-info-container">
           <p className="carousel-home-info-title">{arr[1]}</p>
-          <p className="carousel-home-info-subtitle">{arr[2]}</p>
-          <button>{arr[3]}</button>
+          <Link to={arr[3]}>{arr[2]}</Link>
         </div>
       </div>
     </div>
@@ -135,7 +128,6 @@ function HomeCarousel() {
           <span className="dot" onClick={() => currentSlide(1)}></span>
           <span className="dot" onClick={() => currentSlide(2)}></span>
           <span className="dot" onClick={() => currentSlide(3)}></span>
-          <span className="dot" onClick={() => currentSlide(4)}></span>
         </div>
       </div>
     </div>

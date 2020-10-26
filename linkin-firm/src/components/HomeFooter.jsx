@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 import InstaImg from '../images/svg/insta_img.svg';
 import TwitterImg from '../images/svg/tt_img.svg';
 import LinkedinImg from '../images/svg/linkedin_img.svg';
+import Olimpic2016 from '../images/svg/olimpic_2016.svg';
+import BeneficentInstGuga from '../images/svg/beneficent_inst_guga.svg';
+import AustralianOpen2016 from '../images/svg/australian_open_2016.svg';
+import TelianaWTA from '../images/svg/teliana_wta.svg';
+import USOpen2016 from '../images/svg/us_open_2016.svg';
+import USOpen2014 from '../images/svg/us_open_2014.svg';
 
 const englishTexts = {
-  title: 'Lorem ipsum dolor sit amet',
-  subtitle:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium.',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non mauris et lectus hendrerit sagittis. Duis mollis turpis lacus, in bibendum nunc consequat et. Nullam ut mauris eu felis suscipit laoreet vitae convallis nulla. Nunc nec nulla massa. Morbi nec risus sit amet enim blandit facilisis. Nunc fringilla suscipit rutrum. Nulla dolor risus, luctus vitae arcu a, consectetur lacinia ex. Nulla venenatis auctor arcu, ac pellentesque magna ullamcorper a. Etiam sed gravida quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec nec sem in enim condimentum feugiat.',
   link: [
     ['about us', '/en/about-us'],
     ['our business', '/en/our-business'],
@@ -19,14 +20,25 @@ const englishTexts = {
     ['clients', '/en/clients'],
     ['contact', 'en/contact'],
   ],
+  title: 'Events and Achievements',
+  eventsArr: [
+    { title: 'Bruno Soares: Campeão do US Open 2016', img: USOpen2016 },
+    { title: 'Bruno Soares: Campeão do US Open 2014', img: USOpen2014 },
+    { title: 'Comemorando 1º titulo WTA da Teliana Pereira', img: TelianaWTA },
+    {
+      title:
+        'Comemorando os dois titulos do Australian Open 2016 do Bruno Soares',
+      img: AustralianOpen2016,
+    },
+    {
+      title: 'Jantar beneficente do Instituto Guga Kuerten',
+      img: BeneficentInstGuga,
+    },
+    { title: 'Fotos de Gala para Olimpiadas Rio 2016', img: Olimpic2016 },
+  ],
 };
 
 const portugueseTexts = {
-  title: 'Lorem ipsum dolor sit amet',
-  subtitle:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium.',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non mauris et lectus hendrerit sagittis. Duis mollis turpis lacus, in bibendum nunc consequat et. Nullam ut mauris eu felis suscipit laoreet vitae convallis nulla. Nunc nec nulla massa. Morbi nec risus sit amet enim blandit facilisis. Nunc fringilla suscipit rutrum. Nulla dolor risus, luctus vitae arcu a, consectetur lacinia ex. Nulla venenatis auctor arcu, ac pellentesque magna ullamcorper a. Etiam sed gravida quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec nec sem in enim condimentum feugiat.',
   link: [
     ['sobre nós', '/sobre-nos'],
     ['nosso negócio', '/nosso-negocio'],
@@ -35,9 +47,25 @@ const portugueseTexts = {
     ['clientes', '/clientes'],
     ['contato', '/contato'],
   ],
+  title: 'Eventos e Conquistas',
+  eventsArr: [
+    { title: 'Bruno Soares: Campeão do US Open 2016', img: USOpen2016 },
+    { title: 'Bruno Soares: Campeão do US Open 2014', img: USOpen2014 },
+    { title: 'Comemorando 1º titulo WTA da Teliana Pereira', img: TelianaWTA },
+    {
+      title:
+        'Comemorando os dois titulos do Australian Open 2016 do Bruno Soares',
+      img: AustralianOpen2016,
+    },
+    {
+      title: 'Jantar beneficente do Instituto Guga Kuerten',
+      img: BeneficentInstGuga,
+    },
+    { title: 'Fotos de Gala para Olimpiadas Rio 2016', img: Olimpic2016 },
+  ],
 };
 
-export function contacts(mod='') {
+export function contacts(mod = '') {
   return (
     <div className={`home-footer-contacts${mod}`}>
       <a
@@ -84,12 +112,22 @@ function footerLeftSide({ link }) {
   );
 }
 
-function footerRightSide({ title, subtitle, description }) {
+function eventCard({ title, img }) {
+  return (
+    <div key={title} className="home-footer-card">
+      <img src={img} alt={title} />
+      <p>{title}</p>
+    </div>
+  );
+}
+
+function footerRightSide({ title, eventsArr }) {
   return (
     <div className="home-footer-right-side">
       <p className="home-footer-title">{title}</p>
-      <p className="home-footer-subtitle">{subtitle}</p>
-      <p className="home-footer-description">{description}</p>
+      <div className="home-footer-cards-box">
+        {eventsArr.map(each => eventCard(each))}
+      </div>
     </div>
   );
 }

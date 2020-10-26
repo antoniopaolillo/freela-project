@@ -1,39 +1,102 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import IMG from '../images/png/our-investments-img.png';
 import '../styles/ourInvestments.css';
-import IMG1 from '../images/svg/Mask Group.svg';
-// import IMG2 from '../images/svg/our_inv_2.svg';
-// import IMG3 from '../images/svg/our_inv_3.svg';
-// import IMG4 from '../images/svg/our_inv_4.svg';
-// import IMG5 from '../images/svg/our_inv_5.svg';
-// import IMG6 from '../images/svg/our_inv_6.svg';
+import TuruviusLogo from '../images/svg/turuvius_logo.svg';
+import MottuLogo from '../images/svg/Mottu_logo.svg';
+import nexoosLogo from '../images/svg/nexoos_logo.svg';
+import gsaLogo from '../images/svg/gsa_logo.svg';
+import sigaleiLogo from '../images/svg/sigalei_logo.svg';
+import rosLogo from '../images/svg/ros_logo.svg';
 
 const englishText = {
-  title: 'Lorem ipsum consectetur.',
-  subtitle: 'Nam ac arcu dignissim, posuere mi id,',
-  h1Name: 'Our Companies',
-};
-
-const portugueseText = {
   title: 'Investimentos',
-  subtitle: 'Nam ac arcu dignissim, posuere mi id,',
+  subtitle:
+    'Somos um parceiro empreendedor bem conectado que estará ao seu lado, ajudando de maneira impactante.',
   h1Name: 'Nossos investimentos',
   companiesSubtitles: [
     [
       'Turuvius',
       'Pesquisa jurisprudencial inteligente e jurimetria integrada.',
-      IMG1,
+      TuruviusLogo,
+      'https://turivius.com/',
     ],
-    ['Mottu', 'Plataforma de aluguel de motos', IMG1],
-    ['Nexoos', 'Plataforma de empŕestimo B2B', IMG1],
-    ['Sigalei', 'Inteligência politica e regulatória', IMG1],
+    [
+      'Mottu',
+      'Plataforma de aluguel de motos',
+      MottuLogo,
+      'https://mottu.com.br/',
+    ],
+    [
+      'Nexoos',
+      'Plataforma de empŕestimo B2B',
+      nexoosLogo,
+      'https://www.nexoos.com.br/',
+    ],
+    [
+      'Sigalei',
+      'Inteligência politica e regulatória',
+      sigaleiLogo,
+      'https://www.sigalei.com.br/',
+    ],
     [
       'Golden Set Analytics',
       'Análise de tênis de alto desempenho com base em Big Data e estatísticas',
-      IMG1,
+      gsaLogo,
+      'https://www.goldensetanalytics.com/',
     ],
-    ['Religion of Sports', 'Produtora audiovisual esportiva', IMG1],
+    [
+      'Religion of Sports',
+      'Produtora audiovisual esportiva',
+      rosLogo,
+      'https://www.religionofsports.com/',
+    ],
+  ],
+};
+
+const portugueseText = {
+  title: 'Investimentos',
+  subtitle:
+    'Somos um parceiro empreendedor bem conectado que estará ao seu lado, ajudando de maneira impactante.',
+  h1Name: 'Nossos investimentos',
+  companiesSubtitles: [
+    [
+      'Turuvius',
+      'Pesquisa jurisprudencial inteligente e jurimetria integrada.',
+      TuruviusLogo,
+      'https://turivius.com/',
+    ],
+    [
+      'Mottu',
+      'Plataforma de aluguel de motos',
+      MottuLogo,
+      'https://mottu.com.br/',
+    ],
+    [
+      'Nexoos',
+      'Plataforma de empŕestimo B2B',
+      nexoosLogo,
+      'https://www.nexoos.com.br/',
+    ],
+    [
+      'Sigalei',
+      'Inteligência politica e regulatória',
+      sigaleiLogo,
+      'https://www.sigalei.com.br/',
+    ],
+    [
+      'Golden Set Analytics',
+      'Análise de tênis de alto desempenho com base em Big Data e estatísticas',
+      gsaLogo,
+      'https://www.goldensetanalytics.com/',
+    ],
+    [
+      'Religion of Sports',
+      'Produtora audiovisual esportiva',
+      rosLogo,
+      'https://www.religionofsports.com/',
+    ],
   ],
 };
 
@@ -67,13 +130,16 @@ function apresentationSide(title, subtitle) {
 
 function companiesCards(subtitles) {
   return subtitles.map(subtitle => (
-    <div className="our-investments-companies-card">
-      <img src={subtitle[2]} alt="companie logo" />
-      <div className="companie-card-texts">
-        <p className="companie-card-title">{subtitle[0]}</p>
-        <p className="companie-card-subtitle">{subtitle[1]}</p>
+    <Link to={subtitle[3]}>
+      <div
+        className="our-investments-companies-card"
+        style={{ backgroundImage: `url(${subtitle[2]})` }}>
+        <div className="companie-card-texts">
+          <p className="companie-card-title">{subtitle[0]}</p>
+          <p className="companie-card-subtitle">{subtitle[1]}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   ));
 }
 

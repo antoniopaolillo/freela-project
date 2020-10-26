@@ -1,17 +1,16 @@
 import React from 'react';
-import HomeInfoImg from '../images/svg/img_HomeInfo.svg';
+import HomeInfoImg from '../images/svg/marcio_home_img.svg';
 import '../styles/home.css';
 
 const englishTexts = {
-  title: 'Lorem ipsum dolor sit amet',
+  title: 'Marcio Torres',
   subtitle:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat, lacus id consequat molestie, erat metus faucibus orci, non blandit lorem est et ipsum. Nam enim metus, bibendum in ipsum sit amet, aliquam mollis eros. Nam ac arcu dignissim, posuere mi id,',
 };
 
 const portugueseTexts = {
-  title: 'Lorem ipsum dolor sit amet',
-  subtitle:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat, lacus id consequat molestie, erat metus faucibus orci, non blandit lorem est et ipsum. Nam enim metus, bibendum in ipsum sit amet, aliquam mollis eros. Nam ac arcu dignissim, posuere mi id,',
+  title: 'Marcio Torres',
+subtitle: `Iniciou sua carreira no tênis, se destacando por alcançar o ranking #1 do Brasil! Nos EUA formou-se em Medicina esportiva e concluiu o MBA em Comércio Exterior. Jogou no ATP Tour por 9 anos, alcançando o ranking #132 do mundo. Sofreu uma grave contusão que o tirou cedo das quadras, quando decidiu fundar a LinkinFirm com o objetivo de ajudar a potencializar as conexões entre empresas e atletas.`,
 };
 
 function imgSide() {
@@ -27,7 +26,7 @@ function textsSide({ title, subtitle }) {
     <div className="home-info-texts-container">
       <div className="home-info-texts-box">
         <p className="home-info-texts-title">{title}</p>
-        <p className="home-info-texts-subtitle">{subtitle}</p>
+        <span className="home-info-texts-subtitle">{subtitle}</span>
       </div>
     </div>
   );
