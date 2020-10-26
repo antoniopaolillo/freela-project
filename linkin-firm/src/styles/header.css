@@ -6,7 +6,7 @@
 }
 
 .header-container {
-  background-color: #222B3E;
+  background-color:rgba(34,43,62,1);
   width: 100%;
   height: 121px;
   display: flex;
