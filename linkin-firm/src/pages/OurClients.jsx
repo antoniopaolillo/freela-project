@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import '../styles/ourClients.css';
-import Retangle from '../images/svg/retangle.svg';
+import ClientsImage from '../images/svg/clients_page_img.svg';
 import AliansceSonae from '../images/svg/aliansce_sonae.svg';
 import AngaAsset from '../images/svg/anga_asset.svg';
 import AppProva from '../images/svg/logodois.svg';
@@ -41,6 +41,8 @@ const englishText = {
   title: 'Lorem ipsum consectetur.',
   subtitle: 'Nam ac arcu dignissim, posuere mi id,',
   h1Name: 'Our clients',
+  roleName1: 'Nossos serviços',
+  services: ['Intermediação de Negócios', 'Desenvolvimento de Projetos', 'Parcerias Estratégicas', 'Prospecção de Negócios'],
   clients: [
     { img: AliansceSonae, title: 'Aliansce sonae', subtitle: 'Administradora de shoppings centers' },
     { img: AngaAsset, title: 'Angá asset', subtitle: 'Gestão de fundos de investimentos' },
@@ -83,6 +85,8 @@ const portugueseText = {
   title: 'Clientes',
   subtitle: 'Consultoria de negócios',
   h1Name: 'Nossos clientes',
+  roleName1: 'Nossos serviços',
+  services: ['Intermediação de Negócios', 'Desenvolvimento de Projetos', 'Parcerias Estratégicas', 'Prospecção de Negócios'],
   clients: [
     { img: AliansceSonae, title: 'Aliansce sonae', subtitle: 'Administradora de shoppings centers' },
     { img: AngaAsset, title: 'Angá asset', subtitle: 'Gestão de fundos de investimentos' },
@@ -147,15 +151,38 @@ function headerTexts (title, subtitle) {
     <div className="our-clients-header-texts">
       <p className="our-clients-header-title">{title}</p>
       <p className="our-clients-header-subtitle">{subtitle}</p>
-      <img className="our-clients-header-img" src={Retangle} alt="principal" />
+      <img className="our-clients-header-img" src={ClientsImage} alt="principal" />
     </div>
   );
 }
 
-function ourClientsContainer ({ title, subtitle, h1Name, clients }) {
+function ourServices(services, roleName1) {
+  return (
+    <div className="services-card-clients-container">
+      <p className="athlete-page-ath-title-clients">{roleName1}</p>
+      <div className="services-card-clients">
+        <span className="card-service-clients scale-up-center">
+          <p className="text-card">{services[0]}</p>  
+        </span>
+        <span className="card-service-clients scale-up-center">
+          <p className="text-card">{services[1]}</p>
+        </span>
+        <span className="card-service-clients scale-up-center">
+          <p className="text-card">{services[2]}</p>
+        </span>
+        <span className="card-service-clients scale-up-center">
+          <p className="text-card">{services[3]}</p>
+        </span>
+      </div>
+    </div>
+  )
+}
+
+function ourClientsContainer ({ title, subtitle, h1Name, clients, services, roleName1 }) {
   return  (
     <div className="our-clients-container">
       {headerTexts(title, subtitle)}
+      {ourServices(services, roleName1)}
       {clientsContainer(h1Name, clients)}
     </div>
   );
@@ -169,7 +196,7 @@ function OurClients () {
   return  (
     <div>
       <Header />
-      {ourClientsContainer (namePages)}
+      {ourClientsContainer(namePages)}
     </div>
   );
 }
