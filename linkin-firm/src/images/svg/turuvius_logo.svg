@@ -1,11 +1,17 @@
-<svg width="149" height="143" viewBox="0 0 149 143" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="-32" y="-19" width="181" height="181">
-<circle cx="58.8749" cy="71.056" r="90.0043" fill="#E5E5E5"/>
+<svg width="392" height="143" viewBox="0 0 392 143" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="391.035" height="142.112" rx="5" fill="#2F3556"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="392" height="143">
+<rect width="391.035" height="142.112" rx="5" fill="#2F3556"/>
 </mask>
 <g mask="url(#mask0)">
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-32" y="-19" width="181" height="181">
+<circle cx="58.8749" cy="71.056" r="90.0043" fill="#E5E5E5"/>
+</mask>
+<g mask="url(#mask1)">
 <rect x="-2" y="3" width="142" height="142" fill="url(#pattern0)"/>
 <rect x="134" y="1" width="31" height="144" fill="white"/>
 <rect x="134" y="-16" width="31" height="144" transform="rotate(90 134 -16)" fill="white"/>
+</g>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

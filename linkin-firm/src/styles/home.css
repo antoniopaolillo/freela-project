@@ -14,11 +14,6 @@
   height: auto;
 }
 
-.home-info-img-container {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .home-info-texts-container {
   margin-right: 110px;
   margin-left: 135px;
@@ -35,7 +30,7 @@
 }
 
 .home-info-texts-subtitle {
-  width: 419px;
+  width: 400px;
   font-weight: bold;
   font-size: 28px;
   line-height: 35px;
@@ -58,6 +53,28 @@
       white, 
       #222B3E
     ) 1 1%;
+}
+
+.home-footer-cards-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-footer-card {
+  width: 259px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 17.2308px;
+  line-height: 22px;
+}
+
+.home-footer-card p {
+  margin-top: 10px;
+  margin-bottom: 23px;
 }
 
 .home-footer-container {
@@ -112,39 +129,21 @@
 }
 
 .home-footer-right-side {
-  width: 765px;
+  width: 823px;
   display: flex;
   flex-direction: column;
-  margin-left: 300px;
-  margin-top: 60px;
+  margin-left: 249px;
+  margin-top: 80px;
 }
 
 .home-footer-title {
   margin: 0;
   font-weight: bold;
-  font-size: 72px;
-  line-height: 90px;
+  font-size: 40px;
+  line-height: 48px;
   color: #FFFFFF;
-  width: 483px;
-  margin-bottom: 29px;
-}
-
-.home-footer-subtitle {
-  margin: 0;
-  width: 765px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 45px;
-  color: #FFFFFF;
-  margin-bottom: 45px;
-}
-
-.home-footer-description {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
-  color: #FFFFFF;
-  width: 765px;
+  width: 823px;
+  margin-bottom: 37px;
 }
 
 .carousel-home-container {
@@ -191,7 +190,7 @@
 }
 
 .carousel-home-dots-box {
-  width: 153px;
+  width: 108px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -214,35 +213,35 @@
 
 .carousel-home-info-container {
   margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .carousel-home-info-title {
-  width: 335px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  width: 490px;
   font-weight: bold;
   font-size: 50px;
   line-height: 62px;
   color: #131A27;
 }
 
-.carousel-home-info-subtitle {
-  width: 327px;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  color: #131A27;
-}
 
-.carousel-home-info-container button {
+.carousel-home-info-container a {
   width: 161px;
   height: 45px;
   background: #131A27;
   border-radius: 38px;
   font-weight: bold;
   font-size: 13px;
-  line-height: 16px;
+  text-align: center;
+  line-height: 45px;
   letter-spacing: 0.2em;
   color: #FFFFFF;
   border: none;
+  text-decoration: none;
 }
 
 .carousel-home-dots-container {
@@ -394,6 +393,18 @@
   .home-footer-right-side {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .home-footer-cards-box {
+    margin: 0 auto;
+  }
+
+  .home-footer-card {
+    margin: 0 auto;
+  }
+
+  .home-footer-card:nth-child(4),  .home-footer-card:nth-child(5), .home-footer-card:nth-child(6) {
+    display: none;
   }
 
   .home-footer-title {
@@ -405,27 +416,8 @@
     margin-bottom: 33px;
   }
 
-  .home-footer-subtitle {
-    width: 287px;
-    font-size: 19.2038px;
-    line-height: 24px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 27px;
-  }
-
-  .home-footer-description {
-    width: 291px;
-    font-weight: 500;
-    font-size: 9.60188px;
-    line-height: 12px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 160px;
-  }
-
   .home-footer-contacts {
-    top: 3000px;
+    top: 3210px;
     position: absolute;
   }
 
@@ -477,24 +469,14 @@
   }
 
   .carousel-home-info-title {
-    width: 269px;
-    font-size: 40px;
-    line-height: 50px;
+    width: 355px;
+    font-size: 35px;
+    line-height: 44px;
     text-align: center;
     margin: 0 auto;
     position: absolute;
-    top: 87px;
-    left: 52px;
-  }
-
-  .carousel-home-info-subtitle {
-    width: 327px;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 24px;
-    margin-top: 24px;
+    top: 52px;
+    left: 0px;
   }
 
   .carousel-home-info-container button {
