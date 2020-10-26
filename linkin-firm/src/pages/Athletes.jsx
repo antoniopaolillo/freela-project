@@ -8,18 +8,24 @@ const englishTexts = {
   title: 'Lorem ipsum dolor sit amet',
   subtitle:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat, lacus id consequat molestie, erat metus faucibus orci, non blandit lorem est et ipsum. Nam enim metus, bibendum in ipsum sit amet, aliquam mollis eros. Nam ac arcu dignissim, posuere mi id,',
-  roleName: 'Our Atlhetes',
+  roleName1: 'Our Services',
+  services: ['Agenciamento de atletas', 'Lifestyle Marketing', 'Promoção de Eventos', 'Assessoria de Imprensa'],
+  roleName2: 'Our Atlhetes',
 };
 const portugueseTexts = {
   title: 'Atletas',
   subtitle: 'Ser atleta é ir muito além de uma vitória ou derrota.',
-  roleName: 'Nossos atletas',
+  roleName1: 'Nossos serviços',
+  services: ['Agenciamento de atletas', 'Lifestyle Marketing', 'Promoção de Eventos', 'Assessoria de Imprensa'],
+  roleName2: 'Nossos atletas',
 };
 
-function atlhetesSide(roleName) {
+function atlhetesSide(roleName1, roleName2, services) {
   return (
     <div>
-      <p className="athlete-page-ath-title">{roleName}</p>
+      <p className="athlete-page-ath-title">{roleName1}</p>
+      {cardServices(services)}
+      <p className="athlete-page-ath-title">{roleName2}</p>
       <div className="athlete-card-box-container-outside">
         <SimpleSlider />
       </div>
@@ -37,11 +43,30 @@ function informationsSide(title, subtitle) {
   );
 }
 
-function atlhetesContainer({ title, subtitle, roleName }) {
+function cardServices(services) {
+  return (
+    <div className="services-card ">
+      <span className="card-service scale-up-center">
+        <p className="text-card">{services[0]}</p>
+      </span>
+      <span className="card-service scale-up-center">
+        <p className="text-card">{services[1]}</p>
+      </span>
+      <span className="card-service scale-up-center">
+        <p className="text-card">{services[2]}</p>
+      </span>
+      <span className="card-service scale-up-center">
+        <p className="text-card">{services[3]}</p>
+      </span>
+    </div>
+  )
+}
+
+function atlhetesContainer({ title, subtitle, roleName1, roleName2, services }) {
   return (
     <div className="athlete-page-container">
       {informationsSide(title, subtitle)}
-      {atlhetesSide(roleName)}
+      {atlhetesSide(roleName1, roleName2, services)}
     </div>
   );
 }
