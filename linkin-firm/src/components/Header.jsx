@@ -9,20 +9,20 @@ import HeaderMobile from '../components/HeaderMobile';
 import '../styles/header.css';
 
 const portugueseArray = [
-  { name: 'sobre nós', route: '/sobre-nos' },
   { name: 'nosso négocio', route: '/nosso-negocio' },
   { name: 'atletas', route: '/atletas' },
   { name: 'investimentos', route: '/nossos-investimentos' },
   { name: 'clientes', route: '/nossos-clientes' },
+  { name: 'sobre nós', route: '/sobre-nos' },
   { name: 'contato', route: '/contato' },
 ];
 
 const englishArray = [
-  { name: 'about us', route: '/en/about-us' },
   { name: 'our business', route: '/en/our-business' },
   { name: 'athletes', route: '/en/athletes' },
   { name: 'investments', route: '/en/investments' },
   { name: 'clients', route: '/en/clients' },
+  { name: 'about us', route: '/en/about-us' },
   { name: 'contact', route: '/en/contact' },
 ];
 

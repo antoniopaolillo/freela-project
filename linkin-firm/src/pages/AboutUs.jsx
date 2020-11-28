@@ -1,24 +1,45 @@
-import React from 'react';
-import Header from '../components/Header';
-import '../styles/aboutus.css';
-import IMGCONNECTION from '../images/svg/conexion_img.svg';
-import IMGINOVATION from '../images/svg/inovation_img.svg';
-import CRIATIVITY from '../images/svg/criativity_img.svg';
-import VISIONIMG from '../images/svg/vision_img.svg';
-import IMG2 from '../images/svg/img_test_2.svg';
+import React from "react";
+import Header from "../components/Header";
+import "../styles/aboutus.css";
+import IMG2 from "../images/svg/img_test_2.svg";
+import MarcioImg from "../images/svg/marc_abt.svg";
+import DianaImg from "../images/svg/diana_abt.svg";
+import GlauImg from "../images/svg/glau_abt.svg";
+import LinkedinLogo from "../images/svg/Group 71.svg";
 
 const portugueseTexts = {
-  title: 'Quem Somos',
+  title: "Quem Somos",
   subtitle:
-    'Fundada em 2010, pelo ex- jogador profissional de tênis Marcio Torres, a LinkinFirm, em pouco tempo, tornou-se uma agência-boutique muito conceituada no ramo, pela alta qualidade dos atletas agenciados e pelas empresas renomadas com as quais trabalha e representa.',
-  valuesTitle: 'Nossos valores:',
-  arrValues: ['Inovação', 'Criatividade', 'Visão', 'Conexão'],
+    "Fundada em 2010, pelo ex- jogador profissional de tênis Marcio Torres, a LinkinFirm, em pouco tempo, tornou-se uma agência-boutique muito conceituada no ramo, pela alta qualidade dos atletas agenciados e pelas empresas renomadas com as quais trabalha e representa.",
+  valuesTitle: "Founders",
 };
 
+const founders = [
+  {
+    name: "Márcio Torres",
+    role: "Chief of Executive",
+    img: MarcioImg,
+    linkedin: "",
+  },
+  {
+    name: "Diana Gabanyis",
+    role: "Head of Mídia & PR",
+    img: DianaImg,
+    linkedin: "",
+  },
+  {
+    name: "Glaucia Catani",
+    role: "Chief of Staff",
+    img: GlauImg,
+    linkedin: "",
+  },
+];
+
 const englishTexts = {
-  title: 'Lorem ipsum dolor sit amet',
+  title: "About us",
   subtitle:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat, lacus id consequat molestie, erat metus faucibus orci, non blandit lorem est et ipsum. Nam enim metus, bibendum in ipsum sit amet, aliquam mollis eros. Nam ac arcu dignissim, posuere mi id,',
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat, lacus id consequat molestie, erat metus faucibus orci, non blandit lorem est et ipsum. Nam enim metus, bibendum in ipsum sit amet, aliquam mollis eros. Nam ac arcu dignissim, posuere mi id,",
+  valuesTitle: "Founders",
 };
 
 function titleInfo(title) {
@@ -29,23 +50,19 @@ function subtitleInfo(subtitle) {
   return <div className="about-us-subtitle-info">{subtitle}</div>;
 }
 
-function cardsInfo(arrValues) {
-  const arrayOfImages = [
-    [IMGINOVATION, arrValues[0]],
-    [CRIATIVITY, arrValues[1]],
-    [VISIONIMG, arrValues[2]],
-    [IMGCONNECTION, arrValues[3]],
-  ];
+function cardsInfo() {
   return (
-    <div className="about-us-cards-container-info">
-      {arrayOfImages.map((arr, index) => (
-        <div key={arr[1] + index}>
-          <p>{arr[1]}</p>
-          <img
-            src={arr[0]}
-            alt={arr[1]}
-            className="scale-down-center scale-up-center"
-          />
+    <div className="about-us-people-container">
+      {founders.map(({ name, role, img, linkedin }) => (
+        <div>
+          <div className="about-us-people-name">{name}</div>
+          <div className="about-us-people-role">{role}</div>
+          <img className="about-us-people-img" src={img} alt={name}></img>
+          <div className="about-us-people-link">
+            <a href={linkedin}>
+              <img src={LinkedinLogo} alt="linkedin"></img>
+            </a>
+          </div>
         </div>
       ))}
     </div>
@@ -56,13 +73,13 @@ function msgInfo(title) {
   return <div className="about-us-info-value">{title}</div>;
 }
 
-function infoContainer({ title, subtitle, valuesTitle, arrValues }) {
+function infoContainer({ title, subtitle, valuesTitle }) {
   return (
     <div className="about-us-info-container">
       {titleInfo(title)}
       {subtitleInfo(subtitle)}
       {msgInfo(valuesTitle)}
-      {cardsInfo(arrValues)}
+      {cardsInfo()}
     </div>
   );
 }
@@ -88,7 +105,7 @@ function AboutUs() {
   const {
     location: { pathname },
   } = window;
-  const namePages = pathname.includes('/en') ? englishTexts : portugueseTexts;
+  const namePages = pathname.includes("/en") ? englishTexts : portugueseTexts;
 
   return (
     <div>
