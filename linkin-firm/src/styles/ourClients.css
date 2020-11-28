@@ -7,28 +7,28 @@
   flex-direction: column;
   justify-content: center;
   color: #FFFFFF;
-  padding-top: 90px;
 }
 
 .our-clients-header-title {
   width: 300px;
   font-weight: bold;
-  font-size: 70.6294px;
+  font-size: 75px;
   line-height: 118px;
-  text-align: center;
+  text-align: left;
   border-bottom: 11.3007px solid #FFFFFF;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-left: 76px;
 }
 
 .services-card-clients-container {
-  text-align: center;
+  text-align: left;
+  margin-left: 76px;
 }
 
 .athlete-page-ath-title-clients {
   font-weight: bold;
-  font-size: 75px;
-  line-height: 94px;
+  font-size: 65px;
+  line-height: 81px;
   margin: 0 auto;
   margin-top: 66px;
   margin-bottom: 75px;
@@ -61,7 +61,6 @@
   flex-direction: row;
   align-items: center; 
   justify-content: space-around;
-  margin: 0 auto;
 }
 
 .our-clients-header-subtitle {
@@ -80,14 +79,12 @@
 }
 
 .our-clients-title {
-  width: 916px;
   font-weight: bold;
-  font-size: 55px;
-  line-height: 69px;
-  text-align: center;
-  margin: 0 auto;
+  font-size: 65px;
+  line-height: 81px;
   margin-top: 65px;
   margin-bottom: 60px;
+  margin-left: 76px;
 }
 
 .our-client-card-box {
