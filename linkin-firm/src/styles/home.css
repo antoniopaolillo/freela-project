@@ -81,8 +81,7 @@
   width: 100%;
   height: auto; 
   background-color: #222B3E;
-  display: flex;
-  justify-content: center;
+  color: white;
 }
 
 .home-footer-left-side {
@@ -98,10 +97,22 @@
   justify-content: space-between;
 }
 
+.home-footer-border {
+  height: 197px;
+  border: 1px solid #FFFFFF;
+}
+
 .home-footer-logo {
-  width: 200px;
-  margin-top: 83px;
-  margin-bottom: 100px;
+  width: 142px;
+  margin-top: 62px;
+  margin-left: 73px;
+  margin-bottom: 58px;
+}
+
+.home-contact-message {
+  font-size: 24.41px;
+  font-weight: bold;
+  margin-bottom: 26px;
 }
 
 .home-footer-links-container {
@@ -124,8 +135,9 @@
 .home-footer-box {
   display: flex;
   flex-direction: row;
-  margin-left: 80px;
+  margin-left: 73px;
   margin-right: 90px;
+  width: 702px;
 }
 
 .home-footer-right-side {
