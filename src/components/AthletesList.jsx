@@ -60,7 +60,7 @@ const cardingObj = {
 
 function card(_obj, index) {
   return (
-    <div>
+    <div className="athlete-card">
       <div className="athlete-card-box-container">
         <div className="athlete-card-box">
           <div className="athlete-card-box-infos">

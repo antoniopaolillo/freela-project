@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useCallback, useEffect, useRef } from 'react';
 import Context from '../context/context';
 import { Link } from 'react-router-dom';
 import Logo from '../images/svg/logo.svg';
@@ -84,10 +84,21 @@ function Header() {
   const {
     location: { pathname },
   } = window;
+
+  const pageTopRef = useRef(null);
+  const scrollToTop = useCallback(() => {
+    // eslint-disable-next-line no-unused-expressions
+    pageTopRef?.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [pageTopRef]);
+
+  useEffect(() => {
+    scrollToTop();
+  }, [scrollToTop]);
+
   const namePages = pathname.includes('/en') ? englishArray : portugueseArray;
   const { addClass, setAddClass } = useContext(Context);
   return (
-    <header>
+    <header ref={pageTopRef}>
       <div className="header-mobile">
         <HeaderMobile
           namePages={namePages}

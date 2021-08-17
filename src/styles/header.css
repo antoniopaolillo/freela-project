@@ -12,15 +12,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header-left-side-container {
+  height: 96px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .links-container {
@@ -32,11 +32,20 @@
 }
 
 .link {
-  margin-left: 19px;
-  margin-right: 19px;
+  padding-left: 19px;
+  padding-right: 19px;
   color: white;
   text-decoration: none;
   font-size: 24px;
+  height: 92px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.link:hover {
+  background: linear-gradient(#00A174 0%, #9FC63B 100%);
+  border-radius: 0px 0px 5px 5px;
 }
 
 .btn-language {

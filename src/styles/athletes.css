@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .athletes-container-box {
   display: flex;
   flex-direction: row;
@@ -189,8 +190,21 @@
   }
 }
 
+.athlete-card {
+  margin: 0 auto;
+}
+
 
 @media only screen and (max-width: 599px) {
+
+  .athletes-container-box {
+    margin: 0 auto;
+  }
+
+  .athlete-card-box-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 
   .services-card {
     width: 360px;
@@ -264,10 +278,10 @@
   }
 
   .athlete-page-ath-title {
-    font-size: 46.988px;
-    line-height: 59px;
-    margin-left: 35px;
-    margin-top: 48px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 81px;
+    margin: 50px 0px 20px 0px;
   }
 
   .athlete-card-box {

@@ -96,7 +96,7 @@
 .home-footer-copyright {
   width: max-content;
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: 48px;
   padding-bottom: 24px;
 }
 
@@ -285,6 +285,48 @@
 }
 
 @media only screen and (max-width: 599px) {
+
+  .home-footer-box .icon-info-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .home-footer-box  .icon-info-container img {
+    width: 20px;
+    margin: 0px;
+  }
+
+  .home-footer-box .details-address {
+   text-align: center;
+   margin-top: 5px;
+  }
+
+  .home-footer-box .details-email {
+    margin-top: 5px;
+  }
+
+  .home-contact-message {
+    font-size: 24.41px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    text-align: center;
+    width: 180px;
+    width: auto;
+  }  
+
+  .home-footer-border {
+    display: none;
+  }
+
+  .home-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .home-info-box {
     display: flex;
     flex-direction: column;
@@ -336,18 +378,28 @@
     margin: 0 auto;
     width: 360px;
     height: auto;
-    padding-top: 37px;
   }
 
   .home-footer-logo {
     margin: 0 auto;
     width: 180px;
-    margin-bottom: 63px;
+    margin-bottom: 36px;
+    margin-top: 36px;
   }
 
   .home-footer-contacts {
-    top: 3210px;
+    top: 1870px;
     position: absolute;
+    margin: 0 auto;
+  }
+
+  .home-contacts-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    margin-top: 20px;
   }
 
   .carousel-home-box {

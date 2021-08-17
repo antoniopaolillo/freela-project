@@ -54,7 +54,7 @@ function cardsInfo() {
   return (
     <div className="about-us-people-container">
       {founders.map(({ name, role, img, linkedin }) => (
-        <div>
+        <div className="about-us-people">
           <div className="about-us-people-name">{name}</div>
           <div className="about-us-people-role">{role}</div>
           <img className="about-us-people-img" src={img} alt={name}></img>

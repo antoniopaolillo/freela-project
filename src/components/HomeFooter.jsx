@@ -41,7 +41,7 @@ function contactDetails({ contactMessage }) {
 }
 function footerSocialMedias({ socialMedia }) {
   return (
-    <div>
+    <div className="home-contacts-container">
       <div className="home-contact-message">{socialMedia}</div>
       <div className="home-footer-contacts">
         <a
