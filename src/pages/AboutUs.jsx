@@ -102,10 +102,7 @@ function pageContainer(obj) {
 }
 
 function AboutUs() {
-  const {
-    location: { pathname },
-  } = window;
-  const namePages = pathname.includes("/en") ? englishTexts : portugueseTexts;
+  const namePages = englishTexts;
 
   return (
     <div>

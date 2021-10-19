@@ -75,10 +75,7 @@ function footerBorder() {
 }
 
 function HomeFooter() {
-  const {
-    location: { pathname },
-  } = window;
-  const namePages = pathname.includes("/en") ? englishTexts : portugueseTexts;
+  const namePages = portugueseTexts;
   return (
     <div className="home-footer-container">
       <img className="home-footer-logo" src={Logo} alt="logo" />

@@ -111,10 +111,7 @@ function generateSlide(arr, index) {
 }
 
 function HomeCarousel() {
-  const {
-    location: { pathname },
-  } = window;
-  const namePages = pathname.includes('/en') ? englishTexts : portugueseTexts;
+  const namePages =  portugueseTexts;
   useEffect(() => {
     showSlides(slideIndex);
   });

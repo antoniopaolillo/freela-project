@@ -163,10 +163,7 @@ function contactBody(texts) {
 }
 
 function Contact() {
-  const {
-    location: { pathname },
-  } = window;
-  const namePages = pathname.includes('/en') ? englishTexts : portugueseTexts;
+  const namePages =  portugueseTexts;
 
   return (
     <div>

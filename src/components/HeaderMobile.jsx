@@ -41,12 +41,10 @@ function generateLinks({ name, route }) {
     </Link>
   );
 }
-function HeaderMobile({ namePages, languagebtt, logo }) {
-  const { addClass, setAddClass } = useContext(Context);
+function HeaderMobile({ namePages, logo }) {
   return (
     <Menu right>
       {namePages.map((ele) => generateLinks(ele))}
-      {languagebtt(namePages, setAddClass, addClass)}
       <div className="header-mobile-logo">
         <img src={logo} alt="logo" />
       </div>

@@ -171,10 +171,7 @@ function ourInvestmentsContainer({
 }
 
 function OurInvestments() {
-  const {
-    location: { pathname },
-  } = window;
-  const namePages = pathname.includes('/en') ? englishText : portugueseText;
+  const namePages = portugueseText;
   return (
     <div className="our-investments-mob-container">
       <Header />

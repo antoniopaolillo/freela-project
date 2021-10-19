@@ -416,10 +416,7 @@ function ourClientsContainer({ title, h1Name, clients, services, roleName1 }) {
 }
 
 function OurClients() {
-  const {
-    location: { pathname },
-  } = window;
-  const namePages = pathname.includes("/en") ? englishText : portugueseText;
+  const namePages =  portugueseText;
   return (
     <div>
       <Header />

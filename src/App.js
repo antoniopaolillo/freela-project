@@ -13,19 +13,12 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/en" component={Home} />
-        <Route path="/atletas" component={Athletes} />
-        <Route path="/en/athletes" component={Athletes} />
-        <Route path="/nossos-investimentos" component={OurInvestiments} />
-        <Route path="/en/our-investments" component={OurInvestiments} />
-        <Route path="/sobre-nos" component={AboutUs} />
-        <Route path="/en/about-us" component={AboutUs} />
-        <Route path="/nosso-negocio" component={OurBusiness} />
-        <Route path="/en/our-business" component={OurBusiness} />
-        <Route path="/nossos-clientes" component={OurClients} />
-        <Route path="/en/our-clients" component={OurClients} />
-        <Route path="/contato" component={Contact} />
-        <Route path="/en/contact" component={Contact} />
+        <Route path="/athletes" component={Athletes} />
+        <Route path="/investments" component={OurInvestiments} />
+        <Route path="/about-us" component={AboutUs} />
+        <Route path="/our-business" component={OurBusiness} />
+        <Route path="/clients" component={OurClients} />
+        <Route path="/contact" component={Contact} />
       </Switch>
     </BrowserRouter>
   );

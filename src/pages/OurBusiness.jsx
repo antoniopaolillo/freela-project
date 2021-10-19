@@ -68,10 +68,7 @@ function ourBusinessContainer({ title, subtitle, values }) {
 }
 
 function OurBusiness() {
-  const {
-    location: { pathname },
-  } = window;
-  const namePages = pathname.includes('/en') ? englishText : portugueseText;
+  const namePages =  portugueseText;
 
   return (
     <div className="our-business-container-outside-mob">
