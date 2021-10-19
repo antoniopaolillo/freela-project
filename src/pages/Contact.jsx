@@ -8,7 +8,7 @@ import 'react-phone-input-2/lib/style.css';
 import '../styles/contact.css';
 
 const portugueseTexts = {
-  title: 'Contatos',
+  title: 'Contact',
   subtitle: 'Como você prefere falar com a gente?',
   yourName: 'Seu nome',
   yourPhone: 'Seu telefone',
@@ -29,11 +29,11 @@ const englishTexts = {
   invalidData: 'Invalid Data!',
 };
 
-function descriptions(title, subtitle) {
+function descriptions(title) {
   return (
     <div>
       <p className="title">{title}</p>
-      <p className="subtitle">{subtitle}</p>
+      {contactDetails()}
     </div>
   );
 }
@@ -42,20 +42,13 @@ function contactDetails() {
   return (
     <div className="contact-details-mob">
       <div className="icon-info-container">
-        <img src={phone} className="details-icon" alt="phone-icon" />
-        <div className="details-number-container">
-          <p className="details-number">+1 305 890 95-74</p>
-          <p className="details-number">+55 11 94286-7820</p>
-        </div>
-      </div>
-      <div className="icon-info-container">
         <img src={mail} className="details-icon" alt="mail-icon" />
         <p className="details-email">info@linkinfirm.com</p>
       </div>
       <div className="icon-info-container">
         <img src={location} className="details-icon" alt="location-icon" />
         <p className="details-address">
-          851 NE 1st Ave - # 1108 Miami, Florida 33132 - USA
+        Miami - Madrid - São Paulo
         </p>
       </div>
     </div>
@@ -148,7 +141,6 @@ function descriptionsAndDetailsContainer({ title, subtitle }) {
   return (
     <div className="description-and-details-container">
       {descriptions(title, subtitle)}
-      {contactDetails()}
     </div>
   );
 }
@@ -157,7 +149,6 @@ function contactBody(texts) {
   return (
     <div className="contact-body">
       {descriptionsAndDetailsContainer(texts)}
-      {emailContainer(texts)}
     </div>
   );
 }

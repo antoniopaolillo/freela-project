@@ -36,7 +36,6 @@ function informationsSide(title, subtitle) {
 function atlhetesContainer({ title, subtitle, roleName2 }) {
   return (
     <div className="athlete-page-container">
-      {informationsSide(title, subtitle)}
       {atlhetesSide(roleName2)}
     </div>
   );

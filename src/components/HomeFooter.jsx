@@ -22,13 +22,6 @@ function contactDetails({ contactMessage }) {
     <div className="">
       <div className="home-contact-message">{contactMessage}</div>
       <div className="icon-info-container">
-        <img src={phone} className="details-icon" alt="phone-icon" />
-        <div className="details-number-container">
-          <p className="details-number">+1 305 890 95-74</p>
-          <p className="details-number">+55 11 94286-7820</p>
-        </div>
-      </div>
-      <div className="icon-info-container">
         <img src={mail} className="details-icon" alt="mail-icon" />
         <p className="details-email">info@linkinfirm.com</p>
       </div>

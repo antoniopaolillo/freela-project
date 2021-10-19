@@ -39,12 +39,6 @@ const portugueseTexts = [
     '/atletas'
   ],
   [
-    Carousel2,
-    'Ajudando grandes empresas a fazerem grandes negócios',
-    'VEJA MAIS',
-    '/nosso-negocio'
-  ],
-  [
     Carousel3,
     'Colocando seus clientes um passo a frente',
     'VEJA MAIS',

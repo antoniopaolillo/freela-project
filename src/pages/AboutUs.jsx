@@ -11,13 +11,13 @@ const portugueseTexts = {
   title: "Quem Somos",
   subtitle:
     "Fundada em 2010, pelo ex- jogador profissional de tênis Marcio Torres, a LinkinFirm, em pouco tempo, tornou-se uma agência-boutique muito conceituada no ramo, pela alta qualidade dos atletas agenciados e pelas empresas renomadas com as quais trabalha e representa.",
-  valuesTitle: "Founders",
+  valuesTitle: "Team",
 };
 
 const founders = [
   {
     name: "Márcio Torres",
-    role: "Chief of Executive",
+    role: "CEO",
     img: MarcioImg,
     linkedin: "",
   },
@@ -39,7 +39,7 @@ const englishTexts = {
   title: "About us",
   subtitle:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat, lacus id consequat molestie, erat metus faucibus orci, non blandit lorem est et ipsum. Nam enim metus, bibendum in ipsum sit amet, aliquam mollis eros. Nam ac arcu dignissim, posuere mi id,",
-  valuesTitle: "Founders",
+  valuesTitle: "Team",
 };
 
 function titleInfo(title) {

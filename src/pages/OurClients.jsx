@@ -408,7 +408,6 @@ function ourServices(services, roleName1) {
 function ourClientsContainer({ title, h1Name, clients, services, roleName1 }) {
   return (
     <div className="our-clients-container">
-      {headerTexts(title)}
       {ourServices(services, roleName1)}
       {clientsContainer(h1Name, clients)}
     </div>

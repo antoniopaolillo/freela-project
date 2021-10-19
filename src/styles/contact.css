@@ -21,6 +21,8 @@
 
 .description-and-details-container {
   width: 50%;
+  display: flex;
+  flex-direction: row;
 }
 
 .email-side-container {
@@ -56,7 +58,6 @@
   line-height: 49px;
   margin: 0;
   margin-top: 59px;
-  margin-bottom: 200px;
 }
 
 .icon-info-container {
@@ -187,6 +188,10 @@
 .details-number-container {
   display: flex;
   flex-direction: column;
+}
+
+.contact-details-mob {
+  margin-top: 30px;
 }
 
 
