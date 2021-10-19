@@ -6,21 +6,15 @@ import IMG2 from '../images/svg/our_b_2.svg';
 import IMG3 from '../images/svg/our_b_3.svg';
 import IMG4 from '../images/svg/our_b_4.svg';
 
-const englishText = {
-  title: 'Lorem ipsum',
-  subtitle:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat, lacus id consequat molestie, erat metus faucibus orci, non blandit lorem est et ipsum. Nam enim metus, bibendum in ipsum sit amet, aliquam mollis eros. Nam ac arcu dignissim, posuere mi id,',
-};
-
 const portugueseText = {
-  title: 'Nossos negócios',
+  title: 'Our business',
   subtitle:
-    'LinkinFirm é especializada na gestão de carreiras e intermediação de negócios, além de prestar consultoria para empresas líderes no mercado do Brasil, Estados Unidos e Itália. A LinkinFirm fornece ideias criativas e conceitos de marketing inovadores para o desenvolvimento de negócios, colocando seus clientes um passo a frente do mercado consumidor.',
+    'LinkinFirm specializes in career management and business intermediation, as well as providing consultancy to leading companies in the Brazilian, US and Italian markets. LinkinFirm provides creative ideas and innovative marketing concepts for business development, putting its clients one step ahead of the consumer market.',
   values: [
-    'Gestão de carreiras',
-    'Intermedicação de negócios',
-    'Desenvolvimento de negócios',
-    'Consultoria para empresas',
+    'Career management',
+    'Business intermediation',
+    'Business development',
+    'Consulting for companies',
   ],
 };
 

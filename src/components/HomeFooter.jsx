@@ -13,7 +13,7 @@ const englishTexts = {
 };
 
 const portugueseTexts = {
-  contactMessage: "Entre em contato",
+  contactMessage: "Contact us",
   socialMedia: "Siga as nossas redes sociais",
 };
 

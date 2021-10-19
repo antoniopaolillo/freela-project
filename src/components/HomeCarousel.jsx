@@ -34,15 +34,15 @@ const englishTexts = [
 const portugueseTexts = [
   [
     Carousel1,
-    "Ser atleta é ir muito além de uma vitória",
-    'VEJA MAIS',
-    '/atletas'
+    "Be an athlete is go far beyond a victory",
+    'SEE MORE',
+    '/athletes'
   ],
   [
     Carousel3,
-    'Colocando seus clientes um passo a frente',
-    'VEJA MAIS',
-    '/nossos-clientes'
+    'Putting our customers one step ahead',
+    'SEE MORE',
+    '/clients'
   ],
 ];
 
