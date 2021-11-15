@@ -38,7 +38,7 @@ const founders = [
 const englishTexts = {
   title: "About us",
   subtitle:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat, lacus id consequat molestie, erat metus faucibus orci, non blandit lorem est et ipsum. Nam enim metus, bibendum in ipsum sit amet, aliquam mollis eros. Nam ac arcu dignissim, posuere mi id,",
+    "Founded in 2010 by the ex-professional tennis player Marcio Torres, LinkinFirm, in a short time, has become a highly regarded boutique agency in the field, due to the high quality of its agents and the renowned companies with which it works and represents.",
   valuesTitle: "Team",
 };
 
