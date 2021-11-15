@@ -74,8 +74,6 @@ function HomeFooter() {
       <img className="home-footer-logo" src={Logo} alt="logo" />
       <div className="home-footer-box">
         {contactDetails(namePages)}
-        {footerBorder()}
-        {footerSocialMedias(namePages)}
       </div>
       <div className="home-footer-copyright">Copyright © LinkinFirm</div>
     </div>

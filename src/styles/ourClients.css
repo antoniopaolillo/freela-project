@@ -187,4 +187,8 @@
   .card-service-clients {
     margin-bottom: 30px;
   }
+
+  .services-card-clients-container {
+    margin: 0 auto;
+  }
 }

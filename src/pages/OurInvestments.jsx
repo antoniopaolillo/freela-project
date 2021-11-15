@@ -56,44 +56,44 @@ const englishText = {
 };
 
 const portugueseText = {
-  title: 'Investimentos',
+  title: 'Investments',
   subtitle:
-    'Somos um parceiro empreendedor bem conectado que estará ao seu lado, ajudando de maneira impactante.',
-  h1Name: 'Nossos investimentos',
+    'We are a well-connected entrepreneurial partner who will be by your side, helping you in an impactful way.',
+  h1Name: 'Our Investments',
   companiesSubtitles: [
     [
       'Turuvius',
-      'Pesquisa jurisprudencial inteligente e jurimetria integrada.',
+      'Intelligent jurisprudence search and integrated jurisprudence.',
       TuruviusLogo,
       'https://turivius.com/',
     ],
     [
       'Mottu',
-      'Plataforma de aluguel de motos',
+      'Motorbike rental platform',
       MottuLogo,
       'https://mottu.com.br/',
     ],
     [
       'Nexoos',
-      'Plataforma de empŕestimo B2B',
+      'B2B Lending Platform',
       nexoosLogo,
       'https://www.nexoos.com.br/',
     ],
     [
       'Sigalei',
-      'Inteligência politica e regulatória',
+      'Political and regulatory intelligence',
       sigaleiLogo,
       'https://www.sigalei.com.br/',
     ],
     [
       'Golden Set Analytics',
-      'Análise de tênis de alto desempenho com base em Big Data e estatísticas',
+      'Big Data and Statistics-Based High Performance Tennis Analysis',
       gsaLogo,
       'https://www.goldensetanalytics.com/',
     ],
     [
       'Religion of Sports',
-      'Produtora audiovisual esportiva',
+      'Sports audiovisual producer',
       rosLogo,
       'https://www.religionofsports.com/',
     ],

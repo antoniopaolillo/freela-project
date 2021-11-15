@@ -12,7 +12,7 @@ const englishTexts = {
 const portugueseTexts = {
   title: "Atletas",
   subtitle: "Ser atleta é ir muito além de uma vitória ou derrota.",
-  roleName2: "Nossos atletas",
+  roleName2: "Our Atlhetes",
 };
 
 function atlhetesSide(roleName2) {
