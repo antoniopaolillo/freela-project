@@ -4,7 +4,7 @@ import "../styles/aboutus.css";
 import IMG2 from "../images/svg/img_test_2.svg";
 import MarcioImg from "../images/svg/marc_abt.svg";
 import DianaImg from "../images/svg/diana_abt.svg";
-import GlauImg from "../images/svg/glau_abt.svg";
+import GlauImg from "../images/svg/glau_abt.jpeg";
 import LinkedinLogo from "../images/svg/Group 71.svg";
 
 const portugueseTexts = {
@@ -28,7 +28,7 @@ const founders = [
     linkedin: "",
   },
   {
-    name: "Glaucia Catani",
+    name: "Regina Gouveia",
     role: "Chief of Staff",
     img: GlauImg,
     linkedin: "",
